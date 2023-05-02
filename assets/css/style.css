@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#MainHeader {
+  background-color: #232f3f;
+}
+#MainHeader .upper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+#MainHeader .upper .info p {
+  color: white;
+  font-size: 13px;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .upper .info p span {
+  font-size: 14px;
+  margin-left: -4px;
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .upper .info p:hover {
+  color: #ff7e00;
+  cursor: pointer;
+}
+#MainHeader .upper .nav {
+  display: flex;
+  justify-content: end;
+}
+#MainHeader .upper .nav li {
+  color: white;
+  font-size: 13px;
+  margin-right: 20px;
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .upper .nav li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .upper .nav li a:hover {
+  color: #ff7e00;
+}
+#MainHeader .upper .nav li:hover {
+  color: #ff7e00;
+  cursor: pointer;
+}
+#MainHeader .upper .nav .login {
+  position: relative;
+}
+#MainHeader .upper .nav .login i {
+  margin-left: 2px;
+  font-size: 10px;
+}
+#MainHeader .upper .nav .login .empty {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  left: 66px;
+  top: 26px;
+  transform: rotateZ(45deg);
+}
+#MainHeader .upper .nav .login .panel {
+  border-radius: 3px;
+  width: 150px;
+  height: 70px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 10px;
+  right: 1px;
+  top: 30px;
+}
+#MainHeader .upper .nav .login .panel ul {
+  padding-left: 15px;
+}
+#MainHeader .upper .nav .login .panel ul li {
+  list-style: none;
+  padding-top: 10px;
+}
+#MainHeader .upper .nav .login .panel ul li a {
+  color: black;
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .upper .nav .price {
+  display: flex;
+}
+#MainHeader .upper .nav .price i {
+  margin-top: 4px;
+  margin-left: 3px;
+  font-size: 10px;
+}
+#MainHeader .middle {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainHeader .middle .logo img {
+  width: 94%;
+}
+#MainHeader .middle .input input {
+  width: 90%;
+  height: 45px;
+  border-radius: 22px;
+  margin-left: 15px;
+}
+#MainHeader .middle .input input::placeholder {
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .middle .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainHeader .middle .icons .accountIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+#MainHeader .middle .icons .accountIcon .icon {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 7px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.6s;
+  margin-right: 8px;
+}
+#MainHeader .middle .icons .accountIcon .icon i {
+  color: #ff7e00;
+  font-size: 18px;
+  transition: 0.6s;
+}
+#MainHeader .middle .icons .accountIcon .icon:hover {
+  background-color: #ff7e00;
+}
+#MainHeader .middle .icons .accountIcon .icon:hover i {
+  color: white;
+}
+#MainHeader .middle .icons .accountIcon .text {
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .middle .icons .accountIcon .text .hello {
+  color: white;
+}
+#MainHeader .middle .icons .accountIcon .text .account {
+  color: #8d9297;
+}
+#MainHeader .middle .icons .accountIcon .text span {
+  display: block;
+  font-size: 13px;
+}
+#MainHeader .middle .icons .basketIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainHeader .middle .icons .basketIcon .icon {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 7px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.6s;
+  margin-right: 8px;
+}
+#MainHeader .middle .icons .basketIcon .icon i {
+  color: #ff7e00;
+  font-size: 18px;
+  transition: 0.6s;
+}
+#MainHeader .middle .icons .basketIcon .icon:hover {
+  background-color: #ff7e00;
+}
+#MainHeader .middle .icons .basketIcon .icon:hover i {
+  color: white;
+}
+#MainHeader .middle .icons .basketIcon .text {
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .middle .icons .basketIcon .text .cards {
+  color: white;
+}
+#MainHeader .middle .icons .basketIcon .text .item {
+  color: #8d9297;
+}
+#MainHeader .middle .icons .basketIcon .text span {
+  display: block;
+  font-size: 13px;
+}
+#MainHeader .bottom {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainHeader .bottom .categories {
+  cursor: pointer;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 50px;
+  background-color: #ff7e00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+#MainHeader .bottom .categories:hover .panelCategory {
+  display: block;
+}
+#MainHeader .bottom .categories .allCategory {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  margin-left: 15px;
+}
+#MainHeader .bottom .categories .icon {
+  color: white;
+  margin-right: 20px;
+}
+#MainHeader .bottom .categories .icon i {
+  font-size: 25px;
+}
+#MainHeader .bottom .categories .panelCategory {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 306px;
+  background-color: white;
+  border: 2px solid #ff7e00;
+}
+#MainHeader .bottom .categories .panelCategory ul {
+  padding: 10px;
+}
+#MainHeader .bottom .categories .panelCategory ul li {
+  list-style: none;
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(208, 215, 222, 0.8392156863);
+}
+#MainHeader .bottom .categories .panelCategory ul li a {
+  text-decoration: none;
+  color: black;
+}
+#MainHeader .bottom nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#MainHeader .bottom nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#MainHeader .bottom nav ul li {
+  list-style: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
+#MainHeader .bottom nav ul li a {
+  transition: 0.4s;
+  text-decoration: none;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+#MainHeader .bottom nav ul li a:hover {
+  color: #ff7e00;
+}
+
+#secondaryHeader {
+  background-color: #232f3f;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#secondaryHeader .upperRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#secondaryHeader .upperRow i {
+  color: white;
+}
+#secondaryHeader .upperRow .image {
+  text-align: center;
+}
+#secondaryHeader .upperRow .menu {
+  text-align: start;
+}
+#secondaryHeader .upperRow .basketIcon {
+  position: relative;
+  text-align: end;
+}
+#secondaryHeader .upperRow .basketIcon .item {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: red;
+  color: white;
+  right: -5px;
+  bottom: 11px;
+  border-radius: 50px;
+  padding: 2px;
+}
+#secondaryHeader .upperRow .basketIcon .item span {
+  position: absolute;
+  left: 4px;
+  bottom: -1px;
+  font-size: 12px;
+}
+#secondaryHeader .bottomRow .inputDiv {
+  padding-top: 20px;
+}
+#secondaryHeader .bottomRow .inputDiv input {
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
