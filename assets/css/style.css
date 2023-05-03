@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #MainHeader {
   background-color: #232f3f;
 }
@@ -429,7 +433,8 @@
   width: 100%;
   height: 160px;
 }
-#slider .advertising .second, #slider .advertising .third {
+#slider .advertising .second,
+#slider .advertising .third {
   margin-top: 20px;
 }
 @media only screen and (max-width: 821px) {
@@ -437,53 +442,188 @@
     width: 100%;
     height: 160px;
   }
-  #slider .advertising .second, #slider .advertising .third {
+  #slider .advertising .second,
+  #slider .advertising .third {
     margin-top: 20px;
   }
 }
 #slider .aboutPage {
+  margin-top: 20px;
   border: 1px solid #ebebeb;
   border-radius: 5px;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-#slider .aboutPage .rocket, #slider .aboutPage .refresh, #slider .aboutPage .support, #slider .aboutPage .member {
+#slider .aboutPage .rocket,
+#slider .aboutPage .refresh,
+#slider .aboutPage .support,
+#slider .aboutPage .member {
   display: flex;
 }
-#slider .aboutPage .rocket .icon, #slider .aboutPage .refresh .icon, #slider .aboutPage .support .icon, #slider .aboutPage .member .icon {
+#slider .aboutPage .rocket .icon,
+#slider .aboutPage .refresh .icon,
+#slider .aboutPage .support .icon,
+#slider .aboutPage .member .icon {
   padding: 13px;
   cursor: pointer;
 }
-#slider .aboutPage .rocket .icon i, #slider .aboutPage .refresh .icon i, #slider .aboutPage .support .icon i, #slider .aboutPage .member .icon i {
+#slider .aboutPage .rocket .icon i,
+#slider .aboutPage .refresh .icon i,
+#slider .aboutPage .support .icon i,
+#slider .aboutPage .member .icon i {
   font-size: 45px;
   transition: 0.5s;
 }
-#slider .aboutPage .rocket .icon i:hover, #slider .aboutPage .refresh .icon i:hover, #slider .aboutPage .support .icon i:hover, #slider .aboutPage .member .icon i:hover {
+#slider .aboutPage .rocket .icon i:hover,
+#slider .aboutPage .refresh .icon i:hover,
+#slider .aboutPage .support .icon i:hover,
+#slider .aboutPage .member .icon i:hover {
   color: #ff7e00;
 }
-#slider .aboutPage .rocket .text, #slider .aboutPage .refresh .text, #slider .aboutPage .support .text, #slider .aboutPage .member .text {
+#slider .aboutPage .rocket .text,
+#slider .aboutPage .refresh .text,
+#slider .aboutPage .support .text,
+#slider .aboutPage .member .text {
+  font-family: "Rubik", sans-serif;
   padding: 10px;
 }
-#slider .aboutPage .rocket .text ul, #slider .aboutPage .refresh .text ul, #slider .aboutPage .support .text ul, #slider .aboutPage .member .text ul {
+#slider .aboutPage .rocket .text ul,
+#slider .aboutPage .refresh .text ul,
+#slider .aboutPage .support .text ul,
+#slider .aboutPage .member .text ul {
   cursor: pointer;
   padding: 0;
   margin: 0;
 }
-#slider .aboutPage .rocket .text ul li, #slider .aboutPage .refresh .text ul li, #slider .aboutPage .support .text ul li, #slider .aboutPage .member .text ul li {
+#slider .aboutPage .rocket .text ul li,
+#slider .aboutPage .refresh .text ul li,
+#slider .aboutPage .support .text ul li,
+#slider .aboutPage .member .text ul li {
   list-style: none;
   color: #666;
   font-size: 14px;
 }
-#slider .aboutPage .rocket .text ul .h h5, #slider .aboutPage .refresh .text ul .h h5, #slider .aboutPage .support .text ul .h h5, #slider .aboutPage .member .text ul .h h5 {
+#slider .aboutPage .rocket .text ul .h h5,
+#slider .aboutPage .refresh .text ul .h h5,
+#slider .aboutPage .support .text ul .h h5,
+#slider .aboutPage .member .text ul .h h5 {
   font-size: 14px;
   color: #4f4f4f;
   transition: 0.5s;
 }
-#slider .aboutPage .rocket .text ul .h h5:hover, #slider .aboutPage .refresh .text ul .h h5:hover, #slider .aboutPage .support .text ul .h h5:hover, #slider .aboutPage .member .text ul .h h5:hover {
+#slider .aboutPage .rocket .text ul .h h5:hover,
+#slider .aboutPage .refresh .text ul .h h5:hover,
+#slider .aboutPage .support .text ul .h h5:hover,
+#slider .aboutPage .member .text ul .h h5:hover {
   color: #ff7e00;
 }
-#slider .aboutPage .refresh, #slider .aboutPage .support, #slider .aboutPage .member {
+#slider .aboutPage .refresh,
+#slider .aboutPage .support,
+#slider .aboutPage .member {
   border-left: 1px solid #ebebeb;
+}
+@media only screen and (max-width: 821px) {
+  #slider .aboutPage .refresh,
+  #slider .aboutPage .support,
+  #slider .aboutPage .member {
+    border: none;
+  }
+}
+
+footer {
+  background-color: #232f3f;
+}
+footer .upper {
+  padding: 45px;
+}
+footer .upper .logo-info .adress .ear {
+  margin-top: 20px;
+  display: flex;
+}
+footer .upper .logo-info .adress .ear .text {
+  font-family: "Rubik", sans-serif;
+}
+footer .upper .logo-info .adress .ear .text ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+footer .upper .logo-info .adress .ear .text ul li {
+  list-style: none;
+  color: white;
+}
+footer .upper .logo-info .adress .ear .text ul li a {
+  text-decoration: none;
+  color: #ff7e00;
+  transition: 0.4s;
+}
+footer .upper .logo-info .adress .ear .text ul li a:hover {
+  color: white;
+}
+footer .upper .logo-info .adress .ear .text ul .hot {
+  font-size: 13px;
+}
+footer .upper .logo-info .adress address {
+  font-family: "Rubik", sans-serif;
+  margin-top: 10px;
+  color: #93979c;
+  font-size: 15px;
+}
+footer .upper .logo-info .adress .email {
+  font-family: "Rubik", sans-serif;
+  color: #93979c;
+}
+footer .upper .logo-info .adress .email a {
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  color: #ff7e00;
+  transition: 0.4s;
+}
+footer .upper .logo-info .adress .email a:hover {
+  color: white;
+}
+footer .upper .information {
+  margin-left: 20px;
+}
+footer .upper .information .title, footer .upper .brands .title, footer .upper .categories .title {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+footer .upper .information .nav, footer .upper .brands .nav, footer .upper .categories .nav {
+  margin-top: 20px;
+}
+footer .upper .information .nav ul, footer .upper .brands .nav ul, footer .upper .categories .nav ul {
+  padding: 0;
+  margin: 0;
+  line-height: 35px;
+  font-size: 15px;
+}
+footer .upper .information .nav ul li, footer .upper .brands .nav ul li, footer .upper .categories .nav ul li {
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+}
+footer .upper .information .nav ul li a, footer .upper .brands .nav ul li a, footer .upper .categories .nav ul li a {
+  text-decoration: none;
+  color: #93979c;
+}
+footer .bottomLine {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+footer .bottomLine .text p {
+  margin: 0;
+  color: #93979c;
+  font-size: 14px;
+}
+footer .bottomLine .text p a {
+  text-decoration: none;
+  color: #ff7e00;
+  transition: 0.5s;
+}
+footer .bottomLine .text p a:hover {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
