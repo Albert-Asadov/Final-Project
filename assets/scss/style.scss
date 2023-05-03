@@ -392,7 +392,7 @@ body {
                 width: 306px;
                 background-color: white;
                 border: 2px solid #ff7e00;
-
+                z-index: 11;
                 ul {
                     padding: 10px;
 
@@ -506,7 +506,6 @@ body {
         }
     }
 }
-
 #slider {
     margin-top: 20px;
 
@@ -618,7 +617,6 @@ body {
                 }
             }
         }
-
         .refresh,
         .support,
         .member {
@@ -635,7 +633,20 @@ body {
         }
     }
 }
+#main{
+    padding-top: 25px;
+    padding-bottom: 25px;
 
+    .banner{
+        padding: 0;
+        img{
+            width: 90%;
+        }
+    }
+    .bestSellers{
+        width: 90%;
+    }
+}
 footer {
     background-color: #232f3f;
     .upper{
@@ -736,6 +747,23 @@ footer {
                     transition: .5s;
                     &:hover{
                         color: white;
+                    }
+                }
+            }
+        }
+        .paymant{
+            ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    list-style: none;
+                    color: #93979c;
+                    margin-right: 15px;
+                    i{
+                        font-size: 25px;
                     }
                 }
             }

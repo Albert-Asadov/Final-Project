@@ -326,6 +326,7 @@ body {
   width: 306px;
   background-color: white;
   border: 2px solid #ff7e00;
+  z-index: 11;
 }
 #MainHeader .bottom .categories .panelCategory ul {
   padding: 10px;
@@ -533,6 +534,20 @@ body {
   }
 }
 
+#main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#main .banner {
+  padding: 0;
+}
+#main .banner img {
+  width: 90%;
+}
+#main .bestSellers {
+  width: 90%;
+}
+
 footer {
   background-color: #232f3f;
 }
@@ -626,4 +641,19 @@ footer .bottomLine .text p a {
 }
 footer .bottomLine .text p a:hover {
   color: white;
+}
+footer .bottomLine .paymant ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .bottomLine .paymant ul li {
+  list-style: none;
+  color: #93979c;
+  margin-right: 15px;
+}
+footer .bottomLine .paymant ul li i {
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */
