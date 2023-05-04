@@ -32,6 +32,8 @@ $('.responsive').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>',
+    prevArrow: '<i class="fa-solid fa-chevron-left prev_arrow"></i>',
     responsive: [
       {
         breakpoint: 1024,

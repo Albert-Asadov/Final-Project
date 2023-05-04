@@ -393,6 +393,7 @@ body {
                 background-color: white;
                 border: 2px solid #ff7e00;
                 z-index: 11;
+
                 ul {
                     padding: 10px;
 
@@ -496,6 +497,7 @@ body {
     .bottomRow {
         .inputDiv {
             padding-top: 20px;
+            font-family: 'Rubik', sans-serif;
 
             input {
                 height: 35px;
@@ -506,6 +508,7 @@ body {
         }
     }
 }
+
 #slider {
     margin-top: 20px;
 
@@ -617,6 +620,7 @@ body {
                 }
             }
         }
+
         .refresh,
         .support,
         .member {
@@ -633,70 +637,187 @@ body {
         }
     }
 }
-#main{
+#main {
     padding-top: 25px;
     padding-bottom: 25px;
-
-    .banner{
+    .banner {
         padding: 0;
-        img{
+
+        img {
             width: 90%;
         }
     }
-    .bestSellers{
+    .bestSellers,
+    .newProduct {
+        padding-top: 20px;
         width: 90%;
+        .title {
+            .text {
+                h5 {
+                    font-family: 'Rubik', sans-serif;
+                    padding: 10px;
+                }
+            }
+            .lineOrange {
+                display: flex;
+                .line {
+                    width: 20%;
+                    height: 3px;
+                    background-color: #ff7e00;
+                }
+                .lineSecondary {
+                    width: 80%;
+                    height: 3px;
+                    background-color: #ebebeb;
+                }
+            }
+        }
+        .responsive {
+            position: relative;
+            .prev_arrow {
+                color: white;
+                border-radius: 50px;
+                padding-top: 4px;
+                text-align: center;
+                width: 24px;
+                height: 24px;
+                background-color: white;
+                color: #8f8f8f;
+                border: 1px solid #e6e6e6;
+                position: absolute;
+                top: -57px;
+                right: 30px;
+                font-size: 14px;
+                z-index: 5;
+                cursor: pointer;
+                &:hover {
+                    border-color: #ff7e00;
+                }
+            }
+            .next_arrow {
+                cursor: pointer;
+                color: white;
+                border: 1px solid #e6e6e6;
+                border-radius: 50px;
+                padding-top: 4px;
+                text-align: center;
+                width: 24px;
+                height: 24px;
+                background-color: white;
+                color: #8f8f8f;
+                position: absolute;
+                top: -57px;
+                right: 1px;
+                z-index: 5;
+                font-size: 14px;
+                &:hover {
+                    border-color: #ff7e00;
+                }
+            }
+            div {
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        border-top: 1px solid #d0d7ded6;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        a {
+                            display: flex;
+                            text-decoration: none;
+
+                            .image {
+                                img {
+                                    width: 90px;
+                                }
+                            }
+                            .text-price {
+                                margin-left: 20px;
+                                font-size: 14px;
+                                font-family: 'Rubik', sans-serif;
+                                .text {
+                                    p {
+                                        color: #4f4f4f;
+                                        transition: .5s;
+                                        &:hover {
+                                            color: #ff7e00;
+                                        }
+                                    }
+                                }
+                                .price {
+                                    span {
+                                        color: #ff7e00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
 footer {
     background-color: #232f3f;
-    .upper{
+
+    .upper {
         padding: 45px;
+
         .logo-info {
             .adress {
                 .ear {
                     margin-top: 20px;
                     display: flex;
-    
+
                     .text {
                         font-family: 'Rubik', sans-serif;
+
                         ul {
                             padding: 0;
                             margin: 0;
                             margin-left: 10px;
+
                             li {
                                 list-style: none;
                                 color: white;
+
                                 a {
                                     text-decoration: none;
                                     color: #ff7e00;
                                     transition: .4s;
-    
+
                                     &:hover {
                                         color: white;
                                     }
                                 }
                             }
+
                             .hot {
                                 font-size: 13px;
                             }
                         }
                     }
                 }
+
                 address {
                     font-family: 'Rubik', sans-serif;
                     margin-top: 10px;
                     color: #93979c;
                     font-size: 15px;
                 }
+
                 .email {
                     font-family: 'Rubik', sans-serif;
                     color: #93979c;
+
                     a {
                         font-family: 'Rubik', sans-serif;
                         text-decoration: none;
                         color: #ff7e00;
                         transition: .4s;
-    
+
                         &:hover {
                             color: white;
                         }
@@ -704,26 +825,34 @@ footer {
                 }
             }
         }
-        .information{
+
+        .information {
             margin-left: 20px;
         }
-        .information, .brands, .categories{
-            .title{
+
+        .information,
+        .brands,
+        .categories {
+            .title {
                 font-family: 'Rubik', sans-serif;
                 color: white;
                 font-size: 20px;
             }
-            .nav{
+
+            .nav {
                 margin-top: 20px;
-                ul{
+
+                ul {
                     padding: 0;
                     margin: 0;
                     line-height: 35px;
                     font-size: 15px;
-                    li{
+
+                    li {
                         font-family: 'Rubik', sans-serif;
                         list-style: none;
-                        a{
+
+                        a {
                             text-decoration: none;
                             color: #93979c;
                         }
@@ -733,36 +862,42 @@ footer {
         }
     }
 
-    .bottomLine{
+    .bottomLine {
         padding: 20px;
-        border-top: 1px solid rgba(255,255,255,.06);
-        .text{
-            p{
+        border-top: 1px solid rgba(255, 255, 255, .06);
+
+        .text {
+            p {
                 margin: 0;
                 color: #93979c;
                 font-size: 14px;
-                a{
+
+                a {
                     text-decoration: none;
                     color: #ff7e00;
                     transition: .5s;
-                    &:hover{
+
+                    &:hover {
                         color: white;
                     }
                 }
             }
         }
-        .paymant{
-            ul{
+
+        .paymant {
+            ul {
                 padding: 0;
                 margin: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                li{
+
+                li {
                     list-style: none;
                     color: #93979c;
                     margin-right: 15px;
-                    i{
+
+                    i {
                         font-size: 25px;
                     }
                 }
