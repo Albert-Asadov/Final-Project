@@ -881,6 +881,115 @@ body {
   color: #93979c;
   text-decoration: none;
 }
+#main .rightSide .mainContent .productFirst .products {
+  position: relative;
+}
+#main .rightSide .mainContent .productFirst .products .prev_arrow {
+  color: white;
+  border-radius: 50px;
+  padding-top: 10px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+  color: #8f8f8f;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  font-size: 22px;
+  z-index: 5;
+  cursor: pointer;
+}
+#main .rightSide .mainContent .productFirst .products .prev_arrow:hover {
+  background-color: #ff7e00;
+}
+#main .rightSide .mainContent .productFirst .products .next_arrow {
+  cursor: pointer;
+  color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 50px;
+  padding-top: 10px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+  color: #8f8f8f;
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  z-index: 5;
+  font-size: 22px;
+}
+#main .rightSide .mainContent .productFirst .products .next_arrow:hover {
+  background-color: #ff7e00;
+}
+#main .rightSide .mainContent .productFirst .products ul {
+  padding: 0;
+  margin: 0;
+}
+#main .rightSide .mainContent .productFirst .products ul li {
+  border-right: 1px solid #ebebeb;
+  list-style: none;
+}
+#main .rightSide .mainContent .productFirst .products ul li .image a {
+  text-decoration: none;
+}
+#main .rightSide .mainContent .productFirst .products ul li .image a img {
+  width: 240px;
+  margin: 0 auto;
+}
+#main .rightSide .mainContent .productFirst .products ul li .text {
+  text-align: center;
+}
+#main .rightSide .mainContent .productFirst .products ul li .text:hover .addToCard {
+  display: block;
+}
+#main .rightSide .mainContent .productFirst .products ul li .text .brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
+#main .rightSide .mainContent .productFirst .products ul li .text .name {
+  color: #4f4f4f;
+  font-size: 15px;
+}
+#main .rightSide .mainContent .productFirst .products ul li .text .price {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ff7e00;
+}
+#main .rightSide .mainContent .productFirst .products ul li .text .addToCard {
+  display: none;
+}
+#main .rightSide .mainContent .productFirst .products ul li .text .addToCard a {
+  padding-top: 2px;
+  border-radius: 20px;
+  height: 30px;
+  width: 130px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #ff7e00;
+}
+#main .rightSide .mainContent .adverstingMainPage {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main .rightSide .mainContent .adverstingMainPage .firstImage img {
+  object-fit: contain;
+  width: 97%;
+}
+#main .rightSide .mainContent .adverstingMainPage .secondImage {
+  text-align: end;
+}
+#main .rightSide .mainContent .adverstingMainPage .secondImage img {
+  object-fit: contain;
+  width: 97%;
+}
 
 footer {
   background-color: #232f3f;
