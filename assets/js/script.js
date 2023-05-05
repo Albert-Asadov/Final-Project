@@ -4,8 +4,14 @@ var empty = document.querySelector(".empty")
 
 login.addEventListener("click", function(){
   
-    empty.style.display = "block"
+    empty.setAttribute("style","display:block !important")
+    panel.setAttribute("style","display:block !important")
 })
+
+// window.addEventListener("click",function(){
+//   empty.setAttribute("style","display:none !important")
+//     panel.setAttribute("style","display:none !important")
+// })
 
 
 $('.owl-carousel').owlCarousel({
@@ -38,16 +44,16 @@ $('.responsive').slick({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2
         }
       },
@@ -63,3 +69,79 @@ $('.responsive').slick({
       // instead of a settings object
     ]
   });
+
+  $('.review').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+
+
+  $('.deals').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>',
+    prevArrow: '<i class="fa-solid fa-chevron-left prev_arrow"></i>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+

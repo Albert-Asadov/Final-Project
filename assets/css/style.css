@@ -536,47 +536,51 @@ body {
 }
 
 #main {
+  display: flex;
+}
+#main .leftSide {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-#main .banner {
+#main .leftSide .banner {
+  width: 100%;
   padding: 0;
 }
-#main .banner img {
+#main .leftSide .banner img {
   width: 90%;
 }
-#main .bestSellers,
-#main .newProduct {
+#main .leftSide .bestSellers,
+#main .leftSide .newProduct {
   padding-top: 20px;
   width: 90%;
 }
-#main .bestSellers .title .text h5,
-#main .newProduct .title .text h5 {
+#main .leftSide .bestSellers .title .text h5,
+#main .leftSide .newProduct .title .text h5 {
   font-family: "Rubik", sans-serif;
   padding: 10px;
 }
-#main .bestSellers .title .lineOrange,
-#main .newProduct .title .lineOrange {
+#main .leftSide .bestSellers .title .lineOrange,
+#main .leftSide .newProduct .title .lineOrange {
   display: flex;
 }
-#main .bestSellers .title .lineOrange .line,
-#main .newProduct .title .lineOrange .line {
+#main .leftSide .bestSellers .title .lineOrange .line,
+#main .leftSide .newProduct .title .lineOrange .line {
   width: 20%;
   height: 3px;
   background-color: #ff7e00;
 }
-#main .bestSellers .title .lineOrange .lineSecondary,
-#main .newProduct .title .lineOrange .lineSecondary {
+#main .leftSide .bestSellers .title .lineOrange .lineSecondary,
+#main .leftSide .newProduct .title .lineOrange .lineSecondary {
   width: 80%;
   height: 3px;
   background-color: #ebebeb;
 }
-#main .bestSellers .responsive,
-#main .newProduct .responsive {
+#main .leftSide .bestSellers .responsive,
+#main .leftSide .newProduct .responsive {
   position: relative;
 }
-#main .bestSellers .responsive .prev_arrow,
-#main .newProduct .responsive .prev_arrow {
+#main .leftSide .bestSellers .responsive .prev_arrow,
+#main .leftSide .newProduct .responsive .prev_arrow {
   color: white;
   border-radius: 50px;
   padding-top: 4px;
@@ -593,12 +597,12 @@ body {
   z-index: 5;
   cursor: pointer;
 }
-#main .bestSellers .responsive .prev_arrow:hover,
-#main .newProduct .responsive .prev_arrow:hover {
+#main .leftSide .bestSellers .responsive .prev_arrow:hover,
+#main .leftSide .newProduct .responsive .prev_arrow:hover {
   border-color: #ff7e00;
 }
-#main .bestSellers .responsive .next_arrow,
-#main .newProduct .responsive .next_arrow {
+#main .leftSide .bestSellers .responsive .next_arrow,
+#main .leftSide .newProduct .responsive .next_arrow {
   cursor: pointer;
   color: white;
   border: 1px solid #e6e6e6;
@@ -615,49 +619,267 @@ body {
   z-index: 5;
   font-size: 14px;
 }
-#main .bestSellers .responsive .next_arrow:hover,
-#main .newProduct .responsive .next_arrow:hover {
+#main .leftSide .bestSellers .responsive .next_arrow:hover,
+#main .leftSide .newProduct .responsive .next_arrow:hover {
   border-color: #ff7e00;
 }
-#main .bestSellers .responsive div ul,
-#main .newProduct .responsive div ul {
+#main .leftSide .bestSellers .responsive div ul,
+#main .leftSide .newProduct .responsive div ul {
   padding: 0;
   margin: 0;
 }
-#main .bestSellers .responsive div ul li,
-#main .newProduct .responsive div ul li {
+#main .leftSide .bestSellers .responsive div ul li,
+#main .leftSide .newProduct .responsive div ul li {
   list-style: none;
   border-top: 1px solid rgba(208, 215, 222, 0.8392156863);
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#main .bestSellers .responsive div ul li a,
-#main .newProduct .responsive div ul li a {
+#main .leftSide .bestSellers .responsive div ul li a,
+#main .leftSide .newProduct .responsive div ul li a {
   display: flex;
   text-decoration: none;
 }
-#main .bestSellers .responsive div ul li a .image img,
-#main .newProduct .responsive div ul li a .image img {
+#main .leftSide .bestSellers .responsive div ul li a .image img,
+#main .leftSide .newProduct .responsive div ul li a .image img {
   width: 90px;
 }
-#main .bestSellers .responsive div ul li a .text-price,
-#main .newProduct .responsive div ul li a .text-price {
+#main .leftSide .bestSellers .responsive div ul li a .text-price,
+#main .leftSide .newProduct .responsive div ul li a .text-price {
   margin-left: 20px;
   font-size: 14px;
   font-family: "Rubik", sans-serif;
 }
-#main .bestSellers .responsive div ul li a .text-price .text p,
-#main .newProduct .responsive div ul li a .text-price .text p {
+#main .leftSide .bestSellers .responsive div ul li a .text-price .text p,
+#main .leftSide .newProduct .responsive div ul li a .text-price .text p {
   color: #4f4f4f;
   transition: 0.5s;
 }
-#main .bestSellers .responsive div ul li a .text-price .text p:hover,
-#main .newProduct .responsive div ul li a .text-price .text p:hover {
+#main .leftSide .bestSellers .responsive div ul li a .text-price .text p:hover,
+#main .leftSide .newProduct .responsive div ul li a .text-price .text p:hover {
   color: #ff7e00;
 }
-#main .bestSellers .responsive div ul li a .text-price .price span,
-#main .newProduct .responsive div ul li a .text-price .price span {
+#main .leftSide .bestSellers .responsive div ul li a .text-price .price span,
+#main .leftSide .newProduct .responsive div ul li a .text-price .price span {
   color: #ff7e00;
+}
+#main .leftSide .advertisingWatch {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#main .leftSide .advertisingWatch img {
+  object-fit: contain;
+  width: 100%;
+}
+#main .leftSide .reviews {
+  border: 1px solid #e6e6e6;
+  margin-top: 20px;
+}
+#main .leftSide .reviews .text-image {
+  background-color: #f2f6f8;
+  padding: 40px 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#main .leftSide .reviews .text-image .image img {
+  width: 30px;
+}
+#main .leftSide .reviews .text-image .text {
+  text-align: justify;
+  margin-top: 10px;
+  width: 200px;
+}
+#main .leftSide .reviews .text-image .text p {
+  color: #333e48;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+}
+#main .leftSide .reviews .about {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#main .leftSide .reviews .about .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .leftSide .reviews .about .name p {
+  color: #333e48;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+}
+#main .rightSide {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#main .rightSide .mainContent .title .text h5 {
+  font-family: "Rubik", sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  padding: 0 0 18px 0;
+  margin: 0;
+}
+#main .rightSide .mainContent .title .lineOrange {
+  display: flex;
+}
+#main .rightSide .mainContent .title .lineOrange .line {
+  width: 5%;
+  height: 2px;
+  background-color: #ff7e00;
+}
+#main .rightSide .mainContent .title .lineOrange .lineSecondary {
+  width: 95%;
+  height: 2px;
+  background-color: #ebebeb;
+}
+#main .rightSide .mainContent .deals {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+#main .rightSide .mainContent .deals .prev_arrow {
+  color: white;
+  border-radius: 50px;
+  padding-top: 10px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+  color: #8f8f8f;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  font-size: 22px;
+  z-index: 5;
+  cursor: pointer;
+}
+#main .rightSide .mainContent .deals .prev_arrow:hover {
+  background-color: #ff7e00;
+}
+#main .rightSide .mainContent .deals .next_arrow {
+  cursor: pointer;
+  color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 50px;
+  padding-top: 10px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+  color: #8f8f8f;
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  z-index: 5;
+  font-size: 22px;
+}
+#main .rightSide .mainContent .deals .next_arrow:hover {
+  background-color: #ff7e00;
+}
+#main .rightSide .mainContent .deals ul {
+  padding: 0;
+  margin: 0;
+}
+#main .rightSide .mainContent .deals ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .rightSide .mainContent .deals ul li .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .rightSide .mainContent .deals ul li .image img {
+  object-fit: contain;
+  width: 270px;
+}
+#main .rightSide .mainContent .deals ul li .textDeal {
+  font-family: "Rubik", sans-serif;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .title a {
+  text-decoration: none;
+  color: #333;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .title a h4 {
+  font-size: 16px;
+  transition: 0.4s;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .title a h4:hover {
+  color: #ff7e00;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .textContent {
+  padding-top: 10px;
+  width: 425px;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .textContent p {
+  font-size: 14px;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .price {
+  padding-top: 10px;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .price ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .price ul li {
+  list-style: none;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .price ul .old {
+  color: #999;
+  font-size: 14px;
+  text-decoration-line: line-through;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .price ul .new {
+  color: #ff7e00;
+  font-weight: 500;
+  margin-left: 15px;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .addToCard {
+  padding-top: 20px;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .addToCard a {
+  padding: 3px 0 6px 0;
+  border-radius: 20px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 245px;
+  height: 35px;
+  border: 1px solid;
+  color: #666;
+  background-color: #f2f5f7;
+  border-color: #f2f5f7;
+}
+#main .rightSide .mainContent .deals ul li .textDeal .addToCard a:hover {
+  background-color: #ff7e00;
+  color: white;
+}
+#main .rightSide .mainContent .productFirst .title .upperLine {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .rightSide .mainContent .productFirst .title .upperLine ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+#main .rightSide .mainContent .productFirst .title .upperLine ul li {
+  font-size: 14px;
+  margin-right: 20px;
+  list-style: none;
+}
+#main .rightSide .mainContent .productFirst .title .upperLine ul li a {
+  color: #93979c;
+  text-decoration: none;
 }
 
 footer {
