@@ -861,30 +861,33 @@ body {
   background-color: #ff7e00;
   color: white;
 }
-#main .rightSide .mainContent .productFirst .title .upperLine {
+#main .rightSide .mainContent .productFirst, #main .rightSide .mainContent .productSecond {
+  padding-top: 30px;
+}
+#main .rightSide .mainContent .productFirst .title .upperLine, #main .rightSide .mainContent .productSecond .title .upperLine {
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#main .rightSide .mainContent .productFirst .title .upperLine ul {
+#main .rightSide .mainContent .productFirst .title .upperLine ul, #main .rightSide .mainContent .productSecond .title .upperLine ul {
   display: flex;
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .productFirst .title .upperLine ul li {
+#main .rightSide .mainContent .productFirst .title .upperLine ul li, #main .rightSide .mainContent .productSecond .title .upperLine ul li {
   font-size: 14px;
   margin-right: 20px;
   list-style: none;
 }
-#main .rightSide .mainContent .productFirst .title .upperLine ul li a {
+#main .rightSide .mainContent .productFirst .title .upperLine ul li a, #main .rightSide .mainContent .productSecond .title .upperLine ul li a {
   color: #93979c;
   text-decoration: none;
 }
-#main .rightSide .mainContent .productFirst .products {
+#main .rightSide .mainContent .productFirst .products, #main .rightSide .mainContent .productSecond .products {
   position: relative;
 }
-#main .rightSide .mainContent .productFirst .products .prev_arrow {
+#main .rightSide .mainContent .productFirst .products .prev_arrow, #main .rightSide .mainContent .productSecond .products .prev_arrow {
   color: white;
   border-radius: 50px;
   padding-top: 10px;
@@ -901,10 +904,10 @@ body {
   z-index: 5;
   cursor: pointer;
 }
-#main .rightSide .mainContent .productFirst .products .prev_arrow:hover {
+#main .rightSide .mainContent .productFirst .products .prev_arrow:hover, #main .rightSide .mainContent .productSecond .products .prev_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .productFirst .products .next_arrow {
+#main .rightSide .mainContent .productFirst .products .next_arrow, #main .rightSide .mainContent .productSecond .products .next_arrow {
   cursor: pointer;
   color: white;
   border: 1px solid #e6e6e6;
@@ -921,50 +924,50 @@ body {
   z-index: 5;
   font-size: 22px;
 }
-#main .rightSide .mainContent .productFirst .products .next_arrow:hover {
+#main .rightSide .mainContent .productFirst .products .next_arrow:hover, #main .rightSide .mainContent .productSecond .products .next_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .productFirst .products ul {
+#main .rightSide .mainContent .productFirst .products ul, #main .rightSide .mainContent .productSecond .products ul {
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .productFirst .products ul li {
+#main .rightSide .mainContent .productFirst .products ul li, #main .rightSide .mainContent .productSecond .products ul li {
   border-right: 1px solid #ebebeb;
   list-style: none;
 }
-#main .rightSide .mainContent .productFirst .products ul li .image a {
+#main .rightSide .mainContent .productFirst .products ul li .image a, #main .rightSide .mainContent .productSecond .products ul li .image a {
   text-decoration: none;
 }
-#main .rightSide .mainContent .productFirst .products ul li .image a img {
+#main .rightSide .mainContent .productFirst .products ul li .image a img, #main .rightSide .mainContent .productSecond .products ul li .image a img {
   width: 240px;
   margin: 0 auto;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text {
+#main .rightSide .mainContent .productFirst .products ul li .text, #main .rightSide .mainContent .productSecond .products ul li .text {
   text-align: center;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text:hover .addToCard {
+#main .rightSide .mainContent .productFirst .products ul li .text:hover .addToCard, #main .rightSide .mainContent .productSecond .products ul li .text:hover .addToCard {
   display: block;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .brand {
+#main .rightSide .mainContent .productFirst .products ul li .text .brand, #main .rightSide .mainContent .productSecond .products ul li .text .brand {
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 12px;
   color: #999;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .name {
+#main .rightSide .mainContent .productFirst .products ul li .text .name, #main .rightSide .mainContent .productSecond .products ul li .text .name {
   color: #4f4f4f;
   font-size: 15px;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .price {
+#main .rightSide .mainContent .productFirst .products ul li .text .price, #main .rightSide .mainContent .productSecond .products ul li .text .price {
   margin-top: 15px;
   font-size: 16px;
   color: #ff7e00;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .addToCard {
+#main .rightSide .mainContent .productFirst .products ul li .text .addToCard, #main .rightSide .mainContent .productSecond .products ul li .text .addToCard {
   display: none;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .addToCard a {
+#main .rightSide .mainContent .productFirst .products ul li .text .addToCard a, #main .rightSide .mainContent .productSecond .products ul li .text .addToCard a {
   padding-top: 2px;
   border-radius: 20px;
   height: 30px;
@@ -976,6 +979,7 @@ body {
 }
 #main .rightSide .mainContent .adverstingMainPage {
   padding-top: 60px;
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
 }

@@ -1007,7 +1007,8 @@ body {
                     }
                 }
             }
-            .productFirst {
+            .productFirst, .productSecond {
+                padding-top: 30px;
                 .title {
                     .upperLine {
                         padding-bottom: 10px;
@@ -1128,6 +1129,7 @@ body {
             }
             .adverstingMainPage{
                 padding-top: 60px;
+                padding-bottom: 30px;
                 display: flex;
                  flex-wrap: wrap;
                 .firstImage{
