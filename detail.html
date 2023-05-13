@@ -343,25 +343,60 @@
                         <div class="mainDetail">
                             <div class="aboutProduct">
                                 <div class="photo">
+
                                     <div class="mainImage">
                                         <img src="./assets/images/Product/26-26_phone__83504.jpeg" alt="">
                                     </div>
+
                                     <div class="smallImages">
                                         <div class="images">
                                             <img src="./assets/images/Product/13__93391.jpg" alt="">
                                         </div>
-                                        <div class="images left">
+                                        <div class="images">
                                             <img src="./assets/images/Product/26-26__83504.jpg" alt="">
                                         </div>
-                                        <div class="images left">
+                                        <div class="images">
                                             <img src="./assets/images/Product/2__54401.jpg" alt="">
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="titleMain">
                                     <div class="name">
                                         <h1>vulputate velit2 esse molestie consequat</h1>
                                     </div>
+
+
+                                    <div class="accordion" id="accordionExample">
+                    
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #999;">
+                                                Write a Review
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <form action="">
+                                                <label for="name">Name:</label><br>
+                                                <input type="text" id="name" placeholder="Write youre name"><br>
+
+                                                <label for="email">Email:</label><br>
+                                                <input type="email" id="email" placeholder="Write youre email"><br>
+
+
+                                                <label for="subject">Review Subject</label><br>
+                                                <input type="text" name="" id="subject" placeholder="Write youre review subject"><br>
+
+                                                <label for="comment">Comment</label><br>
+                                                <input type="text" name="" id="comment" placeholder="Write youre comment">
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
                                     <div class="prices">
                                         <div class="discountPrice">
                                             <span>$449.00</span>
@@ -403,11 +438,11 @@
                                         <div class="input">
                                             <div class="mainInput">
                                                 <label for="count">Quantity:</label><br>
-                                                <input type="text" name="" id="count">
+                                                <input type="number" value="1" class="quantityInput" name="" id="count">
                                             </div>
                                             <div class="chevrons">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                                <i class="fa-solid fa-chevron-down"></i>
+                                               <button onclick="handleIncreaseQuantity()"> <i class="fa-solid fa-chevron-up"></i></button>
+                                               <button onclick="handleDEcreaseQuantity()"> <i class="fa-solid fa-chevron-down"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -666,6 +701,21 @@
                                         <p class="lineSecondary"></p>
                                     </div>
                                 </div>
+
+                                <div class="main">
+                                    <div class="name">
+                                        <p>Name</p>
+                                    </div>
+                                    <div class="email">
+                                        <p>Email</p>
+                                    </div>
+                                    <div class="subject">
+                                        <p>Subject</p>
+                                    </div>
+                                    <div class="comment">
+                                        <p>Comment</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -771,6 +821,8 @@
                     </div>
                 </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>

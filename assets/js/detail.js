@@ -82,3 +82,53 @@ $('.responsive').slick({
   wishlistButton.addEventListener("click",function(){
     WishlistPanel.style.display = "block";
   })
+
+
+  let input = document.querySelector(".quantityInput")
+
+  function handleIncreaseQuantity(){
+        input.value++
+  }
+  function handleDEcreaseQuantity(){
+    
+    if(input.value <=1){
+      
+    }
+    else{
+      input.value--
+    }
+}
+
+var MainImage = document.querySelector(".mainImage img");
+
+var FalseImages = document.querySelectorAll(".images img")
+
+
+function MainImageFunction(){
+    [...FalseImages].forEach(Image=>{
+
+        Image.onclick = function(){
+          [...FalseImages].forEach(falseImg =>{
+            falseImg.className = "images"
+          })
+          let src = Image.getAttribute("src");
+          MainImage.src = src;
+          Image.className = "images active"
+        }
+
+        Image.onmouseover = function(){
+          [...FalseImages].forEach(falseImg =>{
+            falseImg.className = "images"
+          })
+          let src = Image.getAttribute("src");
+          MainImage.src = src;
+          Image.className = "images active"
+        }
+
+
+    })
+
+}
+MainImageFunction()
+
+

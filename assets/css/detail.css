@@ -567,6 +567,7 @@ body {
   display: flex;
 }
 #detail .rightSide .mainDetail .aboutProduct .photo .smallImages .images {
+  margin-right: 20px;
   width: 77px;
   height: 77px;
   border: 1px solid rgba(208, 215, 222, 0.8392156863);
@@ -579,8 +580,8 @@ body {
   width: 100%;
   object-fit: contain;
 }
-#detail .rightSide .mainDetail .aboutProduct .photo .smallImages .left {
-  margin-left: 20px;
+#detail .rightSide .mainDetail .aboutProduct .photo .smallImages .images.active {
+  border: 1px solid #ff7e00;
 }
 #detail .rightSide .mainDetail .aboutProduct .titleMain {
   padding: 0 0 30px 10px;
@@ -590,6 +591,19 @@ body {
 }
 #detail .rightSide .mainDetail .aboutProduct .titleMain .name h1 {
   font-size: 25px;
+}
+#detail .rightSide .mainDetail .aboutProduct .titleMain .accordion {
+  padding-top: 30px;
+}
+#detail .rightSide .mainDetail .aboutProduct .titleMain .accordion .accordion-item .accordion-header .accordion-button:hover {
+  color: black !important;
+}
+#detail .rightSide .mainDetail .aboutProduct .titleMain .accordion .accordion-collapse .accordion-body form input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border-color: #e6e6e6;
+  border-width: 1px;
 }
 #detail .rightSide .mainDetail .aboutProduct .titleMain .prices {
   padding-top: 30px;
@@ -937,9 +951,6 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-#detail .rightSide .mainDetail .reviews .title .text {
-  margin-left: 30px;
-}
 #detail .rightSide .mainDetail .reviews .title .text h5 {
   padding-bottom: 8px;
   font-family: "Rubik", sans-serif;
@@ -956,6 +967,15 @@ body {
   width: 90%;
   height: 3px;
   background-color: #ebebeb;
+}
+#detail .rightSide .mainDetail .reviews .main div p {
+  font-size: 15px;
+  color: #666;
+  font-family: "Rubik", sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 footer {
