@@ -156,3 +156,12 @@ $('.products').slick({
   prevArrow: '<i class="fa-solid fa-chevron-left prev_arrow"></i>',
 });
 
+$('.allForMd').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  dots:false,
+  nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>',
+  prevArrow: '<i class="fa-solid fa-chevron-left prev_arrow"></i>',
+});
