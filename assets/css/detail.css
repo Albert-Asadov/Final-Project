@@ -563,6 +563,25 @@ body {
 #detail .rightSide .mainDetail .aboutProduct .photo .mainImage img {
   width: 520px;
 }
+#detail .rightSide .mainDetail .aboutProduct .photo .smallImages {
+  display: flex;
+}
+#detail .rightSide .mainDetail .aboutProduct .photo .smallImages .images {
+  width: 77px;
+  height: 77px;
+  border: 1px solid rgba(208, 215, 222, 0.8392156863);
+}
+#detail .rightSide .mainDetail .aboutProduct .photo .smallImages .images:hover {
+  border-color: #ff7e00;
+  cursor: pointer;
+}
+#detail .rightSide .mainDetail .aboutProduct .photo .smallImages .images img {
+  width: 100%;
+  object-fit: contain;
+}
+#detail .rightSide .mainDetail .aboutProduct .photo .smallImages .left {
+  margin-left: 20px;
+}
 #detail .rightSide .mainDetail .aboutProduct .titleMain {
   padding: 0 0 30px 10px;
 }
@@ -684,6 +703,7 @@ body {
   display: flex;
 }
 #detail .rightSide .mainDetail .aboutProduct .titleMain .addToCard .addToCard {
+  font-family: "Rubik", sans-serif;
   font-size: 13px;
   padding-top: 11px;
   border-radius: 25px;
@@ -730,7 +750,7 @@ body {
   padding: 7px;
   width: 160px;
   position: absolute;
-  bottom: 40px;
+  top: 48px;
   border: 1px solid rgba(208, 215, 222, 0.8392156863);
   box-shadow: 1px 1px 3px 1px rgba(239, 240, 242, 0.84);
 }
@@ -738,6 +758,7 @@ body {
   font-size: 13px;
 }
 #detail .rightSide .mainDetail .aboutProduct .titleMain .addToCard .wishlist .panelWish .addToWishlist p {
+  font-family: "Rubik", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -749,6 +770,7 @@ body {
   font-size: 13px;
 }
 #detail .rightSide .mainDetail .aboutProduct .titleMain .addToCard .wishlist .panelWish .deleteFromWishlist p {
+  font-family: "Rubik", sans-serif;
   padding: 0;
   margin: 10px 0 0 0;
 }
@@ -768,22 +790,24 @@ body {
   display: flex;
 }
 #detail .rightSide .mainDetail .description .title .lineOrange .line {
-  width: 20%;
+  width: 10%;
   height: 3px;
   background-color: #ff7e00;
 }
 #detail .rightSide .mainDetail .description .title .lineOrange .lineSecondary {
-  width: 80%;
+  width: 90%;
   height: 3px;
   background-color: #ebebeb;
 }
 #detail .rightSide .mainDetail .description .mainDescr {
+  font-family: "Rubik", sans-serif;
   color: #333;
   font-size: 15px;
   line-height: 26px;
 }
 #detail .rightSide .mainDetail .customersAlso {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 #detail .rightSide .mainDetail .customersAlso .title .text {
   margin-left: 30px;
@@ -807,6 +831,129 @@ body {
 }
 #detail .rightSide .mainDetail .customersAlso .title .lineOrange .lineSecondary {
   width: 87%;
+  height: 3px;
+  background-color: #ebebeb;
+}
+#detail .rightSide .mainDetail .customersAlso .products {
+  position: relative;
+}
+#detail .rightSide .mainDetail .customersAlso .products .prev_arrow {
+  color: white;
+  border-radius: 50px;
+  padding-top: 10px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+  color: #8f8f8f;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  font-size: 22px;
+  z-index: 5;
+  cursor: pointer;
+}
+#detail .rightSide .mainDetail .customersAlso .products .prev_arrow:hover {
+  background-color: #ff7e00;
+}
+#detail .rightSide .mainDetail .customersAlso .products .next_arrow {
+  cursor: pointer;
+  color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 50px;
+  padding-top: 10px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+  color: #8f8f8f;
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  z-index: 5;
+  font-size: 22px;
+}
+#detail .rightSide .mainDetail .customersAlso .products .next_arrow:hover {
+  background-color: #ff7e00;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul {
+  padding: 0;
+  margin: 0;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li {
+  font-family: "Rubik", sans-serif;
+  border-right: 1px solid #ebebeb;
+  list-style: none;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .image a {
+  text-decoration: none;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .image a img {
+  width: 150px;
+  margin: 0 auto;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .text {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .text:hover .addToCard {
+  display: block;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .text .brand {
+  font-family: "Rubik", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .text .name {
+  font-family: "Rubik", sans-serif;
+  color: #4f4f4f;
+  font-size: 15px;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .text .price {
+  font-family: "Rubik", sans-serif;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ff7e00;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .text .addToCard {
+  display: none;
+}
+#detail .rightSide .mainDetail .customersAlso .products ul li .text .addToCard a {
+  font-family: "Rubik", sans-serif;
+  padding-top: 2px;
+  border-radius: 20px;
+  height: 30px;
+  width: 130px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #ff7e00;
+}
+#detail .rightSide .mainDetail .reviews {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#detail .rightSide .mainDetail .reviews .title .text {
+  margin-left: 30px;
+}
+#detail .rightSide .mainDetail .reviews .title .text h5 {
+  padding-bottom: 8px;
+  font-family: "Rubik", sans-serif;
+}
+#detail .rightSide .mainDetail .reviews .title .lineOrange {
+  display: flex;
+}
+#detail .rightSide .mainDetail .reviews .title .lineOrange .line {
+  width: 10%;
+  height: 3px;
+  background-color: #ff7e00;
+}
+#detail .rightSide .mainDetail .reviews .title .lineOrange .lineSecondary {
+  width: 90%;
   height: 3px;
   background-color: #ebebeb;
 }

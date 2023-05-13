@@ -693,27 +693,51 @@ body {
         .mainDetail {
             padding-top: 30px;
 
-            .aboutProduct{
+            .aboutProduct {
                 display: flex;
+
                 .photo {
                     .mainImage {
                         img {
                             width: 520px;
                         }
                     }
+                    .smallImages{
+                        display: flex;
+                        .images{
+                            width: 77px;
+                            height: 77px;
+                            border: 1px solid #d0d7ded6;
+                            &:hover{
+                                border-color: #ff7e00;
+                                cursor: pointer;
+                            }
+                            img{
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                        .left{
+                            margin-left: 20px;
+                        }
+                    }
                 }
                 .titleMain {
                     padding: 0 0 30px 10px;
+
                     .name {
                         font-family: 'Rubik', sans-serif;
+
                         h1 {
                             font-size: 25px;
                         }
                     }
+
                     .prices {
                         padding-top: 30px;
                         font-family: 'Rubik', sans-serif;
                         display: flex;
+
                         .discountPrice {
                             color: #999;
                             font-size: 18px;
@@ -721,88 +745,103 @@ body {
                             display: flex;
                             align-items: center;
                         }
+
                         .realPrice {
                             margin-left: 10px;
                             color: #ff7e00;
+
                             span {
                                 font-size: 30px;
                                 font-weight: 800;
                             }
                         }
                     }
+
                     .about {
                         padding-top: 20px;
                         padding-bottom: 30px;
                         border-bottom: 1px solid #d0d7ded6;
                         display: flex;
+
                         ul {
                             padding: 0;
                             margin: 0;
-    
+
                             li {
                                 color: #666;
                                 font-size: 14px;
                                 margin-top: 10px;
                                 font-family: 'Rubik', sans-serif;
                                 list-style: none;
-    
+
                                 a {
                                     font-family: 'Rubik', sans-serif;
                                     text-decoration: none;
                                     color: #ff7e00;
                                     transition: .4s;
-    
+
                                     &:hover {
                                         color: black;
                                     }
                                 }
                             }
                         }
+
                         .right {
                             margin-left: 30px;
                         }
                     }
+
                     .inputs {
                         padding-top: 20px;
                         display: flex;
-                        .ram{
-                            label{
+
+                        .ram {
+                            label {
                                 color: #666;
                                 font-size: 14px;
                                 padding-bottom: 10px;
                             }
-                            select{
+
+                            select {
                                 height: 40px;
                                 width: 55px;
                             }
                         }
-                        .memory{
+
+                        .memory {
                             margin-left: 20px;
-                            label{
+
+                            label {
                                 color: #666;
                                 font-size: 14px;
                                 padding-bottom: 10px;
                             }
-                            select{
+
+                            select {
                                 height: 40px;
                                 width: 55px;
                             }
                         }
+
                         .input {
                             margin-left: 20px;
                             display: flex;
                             position: relative;
+
                             .mainInput {
                                 label {
                                     color: #666;
                                     font-size: 14px;
                                     padding-bottom: 10px;
                                 }
+
                                 input {
                                     width: 55px;
                                     height: 40px;
                                 }
                             }
+
                             .chevrons {
                                 cursor: pointer;
                                 display: flex;
@@ -815,21 +854,26 @@ body {
                                 width: 30px;
                                 height: 39px;
                                 border: 1px solid black;
+
                                 i {
                                     display: block;
                                 }
                             }
                         }
+
                         .wishlist {
                             a {
                                 text-decoration: none;
                             }
                         }
                     }
+
                     .addToCard {
                         padding-top: 20px;
                         display: flex;
+
                         .addToCard {
+                            font-family: 'Rubik', sans-serif;
                             font-size: 13px;
                             padding-top: 11px;
                             border-radius: 25px;
@@ -841,18 +885,20 @@ body {
                             width: 160px;
                             height: 44px;
                             transition: .4s;
+
                             &:hover {
                                 background: #b35800;
                                 border-color: #b35800;
                             }
                         }
+
                         .wishlist {
                             position: relative;
                             padding-top: 19px;
                             margin-left: 10px;
                             display: flex;
                             cursor: pointer;
-    
+
                             .icon {
                                 padding-left: 6px;
                                 padding-top: 3px;
@@ -862,44 +908,51 @@ body {
                                 background-color: #ffe8e8;
                                 color: #666;
                                 font-size: 13px;
-    
+
                                 i {
                                     display: inline-block;
                                 }
                             }
-    
+
                             .text {
                                 margin-left: 10px;
                                 color: #666;
                                 font-size: 14px;
                             }
-    
+
                             .panelWish {
                                 display: none;
                                 padding: 7px;
                                 width: 160px;
                                 position: absolute;
-                                bottom: 40px;
+                                top: 48px;
                                 border: 1px solid #d0d7ded6;
                                 box-shadow: 1px 1px 3px 1px rgb(239 240 242 / 84%);
+
                                 .addToWishlist {
                                     font-size: 13px;
-    
+
                                     p {
+                                        font-family: 'Rubik', sans-serif;
                                         padding: 0;
                                         margin: 0;
                                     }
+
                                     a {
                                         text-decoration: none;
                                         color: #666;
                                     }
                                 }
+
                                 .deleteFromWishlist {
                                     font-size: 13px;
+
                                     p {
+                                        font-family: 'Rubik', sans-serif;
                                         padding: 0;
                                         margin: 10px 0 0 0;
                                     }
+
                                     a {
                                         text-decoration: none;
                                         color: #666;
@@ -910,9 +963,11 @@ body {
                     }
                 }
             }
-            .description{
+
+            .description {
                 padding-top: 40px;
                 padding-top: 30px;
+
                 .title {
                     .text {
                         h5 {
@@ -920,48 +975,61 @@ body {
                             font-family: 'Rubik', sans-serif;
                         }
                     }
+
                     .lineOrange {
                         display: flex;
-                        .line {
-                            width: 20%;
-                            height: 3px;
-                            background-color: #ff7e00;
-                        }
-                        .lineSecondary {
-                            width: 80%;
-                            height: 3px;
-                            background-color: #ebebeb;
-                        }
-                    }
-                }
-                .mainDescr{
-                    color: #333;
-                    font-size: 15px;
-                    line-height: 26px;
-                }
-            }
-            .customersAlso{
-                padding-top: 40px;
-                .title {
-                    .text {
-                        margin-left: 30px;
-                        h5 {
-                            padding-bottom: 8px;
-                            font-family: 'Rubik', sans-serif;
-                        }
-                    }
-                    .lineOrange {
-                        display: flex;
-                        .firstOfFirst{
-                            width: 3%;
-                            height: 3px;
-                            background-color: #ebebeb;
-                        }
+
                         .line {
                             width: 10%;
                             height: 3px;
                             background-color: #ff7e00;
                         }
+
+                        .lineSecondary {
+                            width: 90%;
+                            height: 3px;
+                            background-color: #ebebeb;
+                        }
+                    }
+                }
+
+                .mainDescr {
+                    font-family: 'Rubik', sans-serif;
+                    color: #333;
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+            }
+
+            .customersAlso {
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                .title {
+                    .text {
+                        margin-left: 30px;
+
+                        h5 {
+                            padding-bottom: 8px;
+                            font-family: 'Rubik', sans-serif;
+                        }
+                    }
+
+                    .lineOrange {
+                        display: flex;
+
+                        .firstOfFirst {
+                            width: 3%;
+                            height: 3px;
+                            background-color: #ebebeb;
+                        }
+
+                        .line {
+                            width: 10%;
+                            height: 3px;
+                            background-color: #ff7e00;
+                        }
+
                         .lineSecondary {
                             width: 87%;
                             height: 3px;
@@ -969,69 +1037,278 @@ body {
                         }
                     }
                 }
+
+                .products {
+                    position: relative;
+
+                    .prev_arrow {
+                        color: white;
+                        border-radius: 50px;
+                        padding-top: 10px;
+                        text-align: center;
+                        width: 46px;
+                        height: 46px;
+                        background-color: white;
+                        color: #8f8f8f;
+                        border: 1px solid #e6e6e6;
+                        position: absolute;
+                        top: 50%;
+                        left: 18px;
+                        font-size: 22px;
+                        z-index: 5;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #ff7e00;
+                        }
+                    }
+
+                    .next_arrow {
+                        cursor: pointer;
+                        color: white;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 50px;
+                        padding-top: 10px;
+                        text-align: center;
+                        width: 46px;
+                        height: 46px;
+                        background-color: white;
+                        color: #8f8f8f;
+                        position: absolute;
+                        top: 50%;
+                        right: 1px;
+                        z-index: 5;
+                        font-size: 22px;
+
+                        &:hover {
+                            background-color: #ff7e00;
+                        }
+                    }
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            font-family: 'Rubik', sans-serif;
+                            border-right: 1px solid #ebebeb;
+                            list-style: none;
+
+                            .image {
+                                a {
+
+                                    text-decoration: none;
+
+                                    img {
+                                        width: 150px;
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+
+                            .text {
+                                font-family: 'Rubik', sans-serif;
+
+                                &:hover .addToCard {
+                                    display: block;
+                                }
+
+                                text-align: center;
+
+                                .brand {
+                                    font-family: 'Rubik', sans-serif;
+                                    margin-top: 10px;
+                                    margin-bottom: 10px;
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+                                    color: #999;
+                                }
+
+                                .name {
+                                    font-family: 'Rubik', sans-serif;
+                                    color: #4f4f4f;
+                                    font-size: 15px;
+                                }
+
+                                .price {
+                                    font-family: 'Rubik', sans-serif;
+                                    margin-top: 15px;
+                                    font-size: 16px;
+                                    color: #ff7e00;
+                                }
+
+                                .addToCard {
+                                    display: none;
+
+                                    a {
+                                        font-family: 'Rubik', sans-serif;
+                                        padding-top: 2px;
+                                        border-radius: 20px;
+                                        height: 30px;
+                                        width: 130px;
+                                        display: inline-block;
+                                        text-decoration: none;
+                                        color: white;
+                                        background-color: #ff7e00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .reviews {
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                .title {
+                    .text {
+                        margin-left: 30px;
+
+                        h5 {
+                            padding-bottom: 8px;
+                            font-family: 'Rubik', sans-serif;
+                        }
+                    }
+
+                    .lineOrange {
+                        display: flex;
+                        .line {
+                            width: 10%;
+                            height: 3px;
+                            background-color: #ff7e00;
+                        }
+
+                        .lineSecondary {
+                            width: 90%;
+                            height: 3px;
+                            background-color: #ebebeb;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-footer {
-    background-color: #232f3f;
+    footer {
+        background-color: #232f3f;
 
-    .upper {
-        padding: 45px;
+        .upper {
+            padding: 45px;
 
-        .logo-info {
-            .adress {
-                .ear {
-                    margin-top: 20px;
-                    display: flex;
+            .logo-info {
+                .adress {
+                    .ear {
+                        margin-top: 20px;
+                        display: flex;
 
-                    .text {
-                        font-family: 'Rubik', sans-serif;
+                        .text {
+                            font-family: 'Rubik', sans-serif;
 
-                        ul {
-                            padding: 0;
-                            margin: 0;
-                            margin-left: 10px;
+                            ul {
+                                padding: 0;
+                                margin: 0;
+                                margin-left: 10px;
 
-                            li {
-                                list-style: none;
-                                color: white;
+                                li {
+                                    list-style: none;
+                                    color: white;
 
-                                a {
-                                    text-decoration: none;
-                                    color: #ff7e00;
-                                    transition: .4s;
+                                    a {
+                                        text-decoration: none;
+                                        color: #ff7e00;
+                                        transition: .4s;
 
-                                    &:hover {
-                                        color: white;
+                                        &:hover {
+                                            color: white;
+                                        }
                                     }
                                 }
-                            }
 
-                            .hot {
-                                font-size: 13px;
+                                .hot {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+
+                    address {
+                        font-family: 'Rubik', sans-serif;
+                        margin-top: 10px;
+                        color: #93979c;
+                        font-size: 15px;
+                    }
+
+                    .email {
+                        font-family: 'Rubik', sans-serif;
+                        color: #93979c;
+
+                        a {
+                            font-family: 'Rubik', sans-serif;
+                            text-decoration: none;
+                            color: #ff7e00;
+                            transition: .4s;
+
+                            &:hover {
+                                color: white;
                             }
                         }
                     }
                 }
+            }
 
-                address {
+            .information {
+                margin-left: 20px;
+            }
+
+            .information,
+            .brands,
+            .categories {
+                .title {
                     font-family: 'Rubik', sans-serif;
-                    margin-top: 10px;
-                    color: #93979c;
-                    font-size: 15px;
+                    color: white;
+                    font-size: 20px;
                 }
 
-                .email {
-                    font-family: 'Rubik', sans-serif;
+                .nav {
+                    margin-top: 20px;
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        line-height: 35px;
+                        font-size: 15px;
+
+                        li {
+                            font-family: 'Rubik', sans-serif;
+                            list-style: none;
+
+                            a {
+                                text-decoration: none;
+                                color: #93979c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottomLine {
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, .06);
+
+            .text {
+                p {
+                    margin: 0;
                     color: #93979c;
+                    font-size: 14px;
 
                     a {
-                        font-family: 'Rubik', sans-serif;
                         text-decoration: none;
                         color: #ff7e00;
-                        transition: .4s;
+                        transition: .5s;
 
                         &:hover {
                             color: white;
@@ -1039,84 +1316,25 @@ footer {
                     }
                 }
             }
-        }
 
-        .information {
-            margin-left: 20px;
-        }
-
-        .information,
-        .brands,
-        .categories {
-            .title {
-                font-family: 'Rubik', sans-serif;
-                color: white;
-                font-size: 20px;
-            }
-
-            .nav {
-                margin-top: 20px;
-
+            .paymant {
                 ul {
                     padding: 0;
                     margin: 0;
-                    line-height: 35px;
-                    font-size: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     li {
-                        font-family: 'Rubik', sans-serif;
                         list-style: none;
+                        color: #93979c;
+                        margin-right: 15px;
 
-                        a {
-                            text-decoration: none;
-                            color: #93979c;
+                        i {
+                            font-size: 25px;
                         }
                     }
                 }
             }
         }
     }
-
-    .bottomLine {
-        padding: 20px;
-        border-top: 1px solid rgba(255, 255, 255, .06);
-
-        .text {
-            p {
-                margin: 0;
-                color: #93979c;
-                font-size: 14px;
-
-                a {
-                    text-decoration: none;
-                    color: #ff7e00;
-                    transition: .5s;
-
-                    &:hover {
-                        color: white;
-                    }
-                }
-            }
-        }
-
-        .paymant {
-            ul {
-                padding: 0;
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                li {
-                    list-style: none;
-                    color: #93979c;
-                    margin-right: 15px;
-
-                    i {
-                        font-size: 25px;
-                    }
-                }
-            }
-        }
-    }
-}
