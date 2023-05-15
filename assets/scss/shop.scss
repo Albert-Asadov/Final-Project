@@ -1,0 +1,191 @@
+#shop {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .leftSide {
+        .refine {
+            .title {
+                .text {
+                    h5 {
+                        padding-bottom: 8px;
+                        font-family: 'Rubik', sans-serif;
+                    }
+                }
+
+                .lineOrange {
+                    display: flex;
+
+                    .line {
+                        width: 20%;
+                        height: 3px;
+                        background-color: #ff7e00;
+                    }
+
+                    .lineSecondary {
+                        width: 80%;
+                        height: 3px;
+                        background-color: #ebebeb;
+                    }
+                }
+            }
+        }
+
+        .category {
+            .name {
+                font-size: 15px;
+                color: #333e48;
+                cursor: pointer;
+            }
+
+            form {
+                padding-top: 10px;
+
+                .inputs {
+                    margin-top: 5px;
+
+                }
+
+                input {
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+                label {
+                    font-family: 'Rubik', sans-serif;
+                    margin-left: 5px;
+                    font-size: 15px;
+                    color: #333e48;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #ff7e00;
+                    }
+                }
+            }
+        }
+
+        .ram,
+        .memory,
+        .countDown {
+            padding-top: 50px;
+
+            .name {
+                font-family: 'Rubik', sans-serif;
+                font-size: 15px;
+                color: #333e48;
+                cursor: pointer;
+            }
+
+            form {
+                padding-top: 10px;
+
+                .inputs {
+                    margin-top: 5px;
+
+                }
+
+                input {
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+                label {
+                    font-family: 'Rubik', sans-serif;
+                    margin-left: 5px;
+                    font-size: 15px;
+                    color: #333e48;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #ff7e00;
+                    }
+                }
+            }
+        }
+    }
+
+    .rightSide {
+        .sort {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            .name {
+                margin-right: 7px;
+                color: #333;
+                font-family: 'Rubik', sans-serif;
+                font-size: 15px;
+            }
+
+            form {
+                select {
+                    height: 35px;
+                    border-color: #dedede;
+                    padding: 5px;
+                    width: 160px;
+                }
+            }
+        }
+
+        .mainContent {
+            padding-top: 10px;
+            .product{
+                padding: 5px;
+                font-family: 'Rubik', sans-serif;
+                border-right: 1px solid #ebebeb;
+                border-bottom: 1px solid #ebebeb;
+            .image {
+                width: 150px;
+                margin: 0 auto;
+                a {
+                    text-decoration: none;
+                    img {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .text {
+                font-family: 'Rubik', sans-serif;
+                &:hover .addToCard {
+                    display: block;
+                }
+                text-align: center;
+                .brand {
+                    font-family: 'Rubik', sans-serif;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color: #999;
+                }
+                .name {
+                    font-family: 'Rubik', sans-serif;
+                    color: #4f4f4f;
+                    font-size: 15px;
+                }
+                .price {
+                    font-family: 'Rubik', sans-serif;
+                    margin-top: 15px;
+                    font-size: 16px;
+                    color: #ff7e00;
+                }
+                .addToCard {
+                    display: none;
+                    a {
+                        font-family: 'Rubik', sans-serif;
+                        padding-top: 2px;
+                        border-radius: 20px;
+                        height: 30px;
+                        width: 130px;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: white;
+                        background-color: #ff7e00;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
