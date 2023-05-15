@@ -1,0 +1,174 @@
+
+#cart{
+
+    table{
+        thead{
+            background-color: #e8e3e3;
+           tr{
+                th{
+                    font-size: 12px;
+                    padding: 20px;
+                }
+               .item{
+                width: 40%;
+               }
+               .price{
+                width: 20%;
+               }
+               .quantity{
+                width: 20%;
+               }
+               .total{
+                width: 20%;
+               }
+           }
+        }
+        tbody{
+            tr{
+                border-bottom: 1px solid #e5e5e5;
+                td{
+                    .img-text{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        .image{
+                            img{
+                                width: 120px;
+                            }
+                        }
+                        .text{
+                            
+                            margin-left: 15px;
+                            .brand{
+                                font-size: 14px;
+                                color: #93979c;
+                                span{
+                                    font-family: 'Rubik', sans-serif;
+                                }
+                            }
+                            .name{
+                                font-weight: 500;
+                                font-size: 16px;
+                                a{
+                                    color: #4f4f4f;
+                                    text-decoration: none;
+                                    transition: .4s;
+                                    p{
+                                        font-family: 'Rubik', sans-serif;
+                                    }
+                                    &:hover{
+                                        color: #ff7e00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                td{
+                    .price{
+                        margin-left: 10px;
+                        color: #333;
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                }
+                td{
+                    button{
+                        border: none;
+                        background-color: white;
+                        width: 28px;
+                        height: 25px;
+                        border: 1px solid #8f8f8f;
+                        text-align: center;
+                        border-radius: 15px;
+                    }
+                    .input{
+                        input{
+                            font-family: 'Rubik', sans-serif;
+                            width: 40px;
+                            color: #666;
+                            border: none;
+                            text-align: center;
+                            font-weight: 700;
+                            font-size: 17px;
+                        }
+                    }
+                    .quantity{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                    }
+                }
+                td{
+                    .totalPrice{
+                        font-family: 'Rubik', sans-serif;
+                        font-weight: 900;
+                        color: #333;
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+    .shippingInfo{
+        padding-top: 30px;
+        width: 50%;
+        li{
+            font-family: 'Rubik', sans-serif;
+            border-bottom: 1px solid #8f8f8f;
+            .subtotal{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    margin-left: 10px;
+                }
+            }
+            list-style: none;
+            .accordion{
+                width: 100%;
+            }
+            
+        }
+        .grandPrice{
+            border: none;
+            .grand{
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+                .text{
+                    margin-left: 6px;
+                    font-size: 20px;
+                }
+                .price{
+                    font-size: 20px;
+                }
+            }
+        }
+        .check{
+            padding-top: 20px;
+            border: none;
+            .button{
+                display: flex;
+                justify-content: end;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    background-color: #444;
+                    color: white;
+                    width: 220px;
+                    border-radius: 20px;
+                    height: 33px;
+                    padding-top: 4px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }

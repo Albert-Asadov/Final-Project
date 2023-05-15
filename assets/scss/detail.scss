@@ -748,12 +748,25 @@ body {
                         .accordion-collapse{
                             .accordion-body{
                                 form{
+                                    label{
+                                        font-family: 'Rubik', sans-serif;
+                                        color: #333;
+                                        font-size: 14px;
+                                    }
                                     input{
+                                        margin-top: 6px;
+                                        margin-bottom: 6px;
+                                        font-family: 'Rubik', sans-serif;
                                         width: 100%;
                                         height: 35px;
                                         border-radius: 10px;
                                         border-color: #e6e6e6;
                                         border-width: 1px;
+                                        &::placeholder{
+                                            font-size: 14px;
+                                            color: #999;
+                                            padding-left: 5px;
+                                        }
                                     }
                                 }
                             }
@@ -833,6 +846,7 @@ body {
                             select {
                                 height: 40px;
                                 width: 55px;
+                                text-align: center;
                             }
                         }
 
@@ -848,6 +862,7 @@ body {
                             select {
                                 height: 40px;
                                 width: 55px;
+                                text-align: center;
                             }
                         }
 
@@ -866,6 +881,7 @@ body {
                                 input {
                                     width: 55px;
                                     height: 40px;
+                                    text-align: center;
                                 }
                             }
 
@@ -881,7 +897,12 @@ body {
                                 width: 30px;
                                 height: 39px;
                                 border: 1px solid black;
-
+                                button{
+                                    border: none;
+                                    background-color: white;
+                                    width: 29px;
+                                    height: 38px;
+                                }
                                 i {
                                     display: block;
                                 }

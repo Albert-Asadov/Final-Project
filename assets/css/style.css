@@ -431,6 +431,60 @@ body {
   object-fit: contain;
   width: 100%;
 }
+#slider .slide .owl-carousel .owl-nav .owl-prev {
+  color: white;
+  border-radius: 50px;
+  padding-top: 10px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+  color: #8f8f8f;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  font-size: 22px;
+  z-index: 5;
+  font-size: 35px;
+  cursor: pointer;
+}
+#slider .slide .owl-carousel .owl-nav .owl-prev span {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  font-weight: 100;
+}
+#slider .slide .owl-carousel .owl-nav .owl-prev:hover {
+  background-color: #ff7e00;
+  border-color: #ff7e00;
+}
+#slider .slide .owl-carousel .owl-nav .owl-next {
+  cursor: pointer;
+  color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 50px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+  color: #8f8f8f;
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  z-index: 5;
+  font-size: 35px;
+}
+#slider .slide .owl-carousel .owl-nav .owl-next span {
+  position: absolute;
+  bottom: 0px;
+  right: 13px;
+  font-weight: 100;
+}
+#slider .slide .owl-carousel .owl-nav .owl-next:hover {
+  background-color: #ff7e00;
+  border-color: #ff7e00;
+}
 #slider .advertising div img {
   width: 100%;
   height: 160px;

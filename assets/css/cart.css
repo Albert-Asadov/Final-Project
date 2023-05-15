@@ -1,0 +1,148 @@
+#cart table thead {
+  background-color: #e8e3e3;
+}
+#cart table thead tr th {
+  font-size: 12px;
+  padding: 20px;
+}
+#cart table thead tr .item {
+  width: 40%;
+}
+#cart table thead tr .price {
+  width: 20%;
+}
+#cart table thead tr .quantity {
+  width: 20%;
+}
+#cart table thead tr .total {
+  width: 20%;
+}
+#cart table tbody tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+#cart table tbody tr td .img-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#cart table tbody tr td .img-text .image img {
+  width: 120px;
+}
+#cart table tbody tr td .img-text .text {
+  margin-left: 15px;
+}
+#cart table tbody tr td .img-text .text .brand {
+  font-size: 14px;
+  color: #93979c;
+}
+#cart table tbody tr td .img-text .text .brand span {
+  font-family: "Rubik", sans-serif;
+}
+#cart table tbody tr td .img-text .text .name {
+  font-weight: 500;
+  font-size: 16px;
+}
+#cart table tbody tr td .img-text .text .name a {
+  color: #4f4f4f;
+  text-decoration: none;
+  transition: 0.4s;
+}
+#cart table tbody tr td .img-text .text .name a p {
+  font-family: "Rubik", sans-serif;
+}
+#cart table tbody tr td .img-text .text .name a:hover {
+  color: #ff7e00;
+}
+#cart table tbody tr td .price {
+  margin-left: 10px;
+  color: #333;
+  font-size: 17px;
+  font-weight: 500;
+}
+#cart table tbody tr td button {
+  border: none;
+  background-color: white;
+  width: 28px;
+  height: 25px;
+  border: 1px solid #8f8f8f;
+  text-align: center;
+  border-radius: 15px;
+}
+#cart table tbody tr td .input input {
+  font-family: "Rubik", sans-serif;
+  width: 40px;
+  color: #666;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+}
+#cart table tbody tr td .quantity {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#cart table tbody tr td .totalPrice {
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+  color: #333;
+  font-size: 19px;
+}
+#cart .shippingInfo {
+  padding-top: 30px;
+  width: 50%;
+}
+#cart .shippingInfo li {
+  font-family: "Rubik", sans-serif;
+  border-bottom: 1px solid #8f8f8f;
+  list-style: none;
+}
+#cart .shippingInfo li .subtotal {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#cart .shippingInfo li .subtotal span {
+  margin-left: 10px;
+}
+#cart .shippingInfo li .accordion {
+  width: 100%;
+}
+#cart .shippingInfo .grandPrice {
+  border: none;
+}
+#cart .shippingInfo .grandPrice .grand {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+#cart .shippingInfo .grandPrice .grand .text {
+  margin-left: 6px;
+  font-size: 20px;
+}
+#cart .shippingInfo .grandPrice .grand .price {
+  font-size: 20px;
+}
+#cart .shippingInfo .check {
+  padding-top: 20px;
+  border: none;
+}
+#cart .shippingInfo .check .button {
+  display: flex;
+  justify-content: end;
+}
+#cart .shippingInfo .check .button a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #444;
+  color: white;
+  width: 220px;
+  border-radius: 20px;
+  height: 33px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}/*# sourceMappingURL=cart.css.map */

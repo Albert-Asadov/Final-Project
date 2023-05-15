@@ -1,0 +1,98 @@
+#loginSection .login {
+  padding: 30px;
+  border: 1px solid gray;
+  background-color: #f2f2f2;
+}
+#loginSection .login .title {
+  font-family: "Rubik", sans-serif;
+}
+#loginSection .login .input .email label {
+  color: #666;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}
+#loginSection .login .input .email input {
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  color: #666;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}
+#loginSection .login .input .password {
+  margin-top: 30px;
+}
+#loginSection .login .input .password label {
+  color: #666;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}
+#loginSection .login .input .password input {
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  color: #666;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}
+#loginSection .login .forgotPassword {
+  transition: 0.4s;
+  margin-top: 5px;
+  color: #666;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}
+#loginSection .login .forgotPassword:hover {
+  color: #ff7e00;
+}
+#loginSection .login .button a {
+  font-size: 14px;
+  display: inline-block;
+  width: 175px;
+  height: 40px;
+  border-radius: 20px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: #444;
+  border-color: #444;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+#loginSection .login .button a:hover {
+  background-color: #797979;
+  border-color: #8f8f8f;
+}
+#loginSection .transfer {
+  padding: 30px;
+  border: 1px solid gray;
+  background-color: #f2f2f2;
+}
+#loginSection .transfer .text {
+  color: #666;
+  font-size: 15px;
+}
+#loginSection .transfer .text ul li {
+  list-style: none;
+}
+#loginSection .transfer .button {
+  margin-top: 62px;
+}
+#loginSection .transfer .button a {
+  font-size: 14px;
+  display: inline-block;
+  width: 175px;
+  height: 40px;
+  border-radius: 20px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: #444;
+  border-color: #444;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+#loginSection .transfer .button a:hover {
+  background-color: #797979;
+  border-color: #8f8f8f;
+}/*# sourceMappingURL=login.css.map */
