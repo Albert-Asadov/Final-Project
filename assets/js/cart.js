@@ -14,3 +14,13 @@ function handleDEcreaseQuantity(){
     input.value--
     }
 }
+
+var table = document.querySelector(".mainDescr");
+
+var iconDelete = document.querySelector(".delete");
+
+iconDelete.addEventListener("click", function(){
+
+   table.remove();
+
+})

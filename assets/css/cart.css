@@ -82,11 +82,36 @@
   justify-content: start;
   align-items: center;
 }
+#cart table tbody tr td {
+  position: relative;
+}
 #cart table tbody tr td .totalPrice {
   font-family: "Rubik", sans-serif;
   font-weight: 900;
   color: #333;
   font-size: 19px;
+}
+#cart table tbody tr td .iconDelete {
+  cursor: pointer;
+  background-color: #e5e5e5;
+  border-radius: 50px;
+  border: 1px solid #e5e5e5;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 45px;
+  bottom: 45px;
+}
+#cart table tbody tr td .iconDelete a {
+  text-decoration: none;
+  color: #333;
+}
+#cart table tbody tr td .iconDelete i {
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  top: 2px;
+  right: 4px;
 }
 #cart .shippingInfo {
   padding-top: 30px;

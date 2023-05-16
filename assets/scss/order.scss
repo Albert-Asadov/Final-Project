@@ -1,0 +1,168 @@
+
+
+.order{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    .aboutUser{
+        padding: 30px 20px 30px 20px;
+        .customerEmail{
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            .title{
+                h3{
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 900;
+                }
+            }
+            .email{
+                font-family: 'Rubik', sans-serif;
+            }
+        }
+        .shippingInfo{
+            padding-top: 30px;
+            .title{
+                
+                h3{
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 900;
+                }
+            }
+            .text{
+                padding-top: 30px;
+                font-family: 'Rubik', sans-serif;
+                .name{
+                    padding-bottom: 10px;
+                    h3{
+                        font-size: 16px;
+                        padding: 0;
+                        margin: 0;
+                        font-weight: 900;
+                    }
+                }
+                .descr{
+                    border: 1px solid #ddd;
+                    padding: 10px;
+                    ul{
+                        padding: 0;
+                        margin: 0;
+                        li{
+                            list-style: none;
+                        }
+                    }
+                }
+            }
+        }
+        .button{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-top: 30px;
+            a{
+                padding-top: 4px;
+                width: 145px;
+                height: 35px;
+                border-radius: 20px;
+                text-align: center;
+                display: inline-block;
+                background-color: #444;
+                border-color: #444;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    .orderInfo{
+        .mainContent{
+            font-family: 'Rubik', sans-serif;
+            margin: 0 auto;
+            width: 400px;
+            height: 402px;
+            border: 1px solid #ddd;
+            .title{
+                padding: 15px;
+                font-family: 'Rubik', sans-serif;
+                display: flex ;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #ddd;
+                span{
+                    a{
+                        text-decoration: none;
+                        font-family: 'Rubik', sans-serif;
+                    }
+                }
+            }
+            .main{
+                border-bottom: 1px solid #ddd;
+                .content{
+                    padding: 15px;
+                .count{
+                    font-family: 'Rubik', sans-serif;
+                    span{
+                        font-size: 14px;
+                        color: #333;
+                    }
+                }
+                .product{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding-top: 10px;
+                    .image{
+                        img{
+                            width: 75px;
+                        }
+                    }
+                    .text{
+                        p{
+                            padding: 0;
+                            margin: 0;
+                            font-weight: 500;
+                            font-family: 'Rubik', sans-serif;
+                            font-size: 14px;
+                            color: #333;
+                        }
+                    }
+                    .price{
+                        span{
+                            font-size: 14px;
+                            color: #333;
+                        }
+                    }
+                }
+                }
+            }
+            .subtotal_And_Tax{
+                border-bottom: 1px solid #ddd;
+                .subtotal, .tax{
+                    padding: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h6{
+                        color: #333;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .total{
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h5{
+                    font-size: 35px;
+                    font-weight: 700;
+                }
+            }
+        }
+        
+    }
+}
