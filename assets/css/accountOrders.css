@@ -1,0 +1,60 @@
+#accountInfo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#accountInfo .title {
+  padding: 0;
+  margin: 0;
+}
+#accountInfo .title .TitleText {
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+#accountInfo ul {
+  display: inline-block;
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+}
+#accountInfo ul li {
+  padding: 7px;
+  border: 1px solid #e5e5e5;
+  list-style: none;
+  font-size: 14px;
+}
+#accountInfo ul li a {
+  font-family: "Rubik", sans-serif;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+#accountInfo ul .colorChange {
+  background-color: #f7f8f9;
+}
+#accountInfo ul .current {
+  border-top-color: black;
+  font-family: "Rubik", sans-serif;
+  border-bottom: none;
+}
+#accountInfo .content .mainContent {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#accountInfo .content .mainContent .image img {
+  width: 120px;
+}
+#accountInfo .content .mainContent .name a {
+  text-decoration: none;
+  color: #000;
+}
+#accountInfo .content .mainContent .name a:hover {
+  color: #ff7e00;
+}/*# sourceMappingURL=accountOrders.css.map */

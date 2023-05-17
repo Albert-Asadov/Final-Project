@@ -1,0 +1,59 @@
+#accountAdress {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#accountAdress .title {
+  padding: 0;
+  margin: 0;
+}
+#accountAdress .title .TitleText {
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+#accountAdress ul {
+  display: inline-block;
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+}
+#accountAdress ul li {
+  padding: 7px;
+  border: 1px solid #e5e5e5;
+  list-style: none;
+  font-size: 14px;
+}
+#accountAdress ul li a {
+  font-family: "Rubik", sans-serif;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+#accountAdress ul .colorChange {
+  background-color: #f7f8f9;
+}
+#accountAdress ul .current {
+  border-top-color: black;
+  font-family: "Rubik", sans-serif;
+  border-bottom: none;
+}
+#accountAdress .mainContent {
+  padding-top: 25px;
+  width: 400px;
+  height: 250px;
+  background-color: #e5e5e5;
+}
+#accountAdress .mainContent ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+#accountAdress .mainContent ul li {
+  list-style: none;
+}
+#accountAdress .mainContent ul .fullName {
+  font-weight: 700;
+}/*# sourceMappingURL=accountAdress.css.map */

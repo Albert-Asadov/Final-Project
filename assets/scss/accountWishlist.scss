@@ -1,0 +1,70 @@
+
+#accountWishlist{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .title{
+        padding: 0;margin: 0;
+        .TitleText{
+            font-family: 'Rubik', sans-serif;
+            padding: 0;
+            margin: 0;
+            font-size: 24px;
+        }
+    }
+    ul{
+        display: inline-block;
+        margin-top: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        li{
+            padding: 7px;
+            border: 1px solid #e5e5e5;
+            list-style: none;
+            font-size: 14px;
+            a{
+                font-family: 'Rubik', sans-serif;
+                color: #000;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+        .colorChange{
+            background-color: #f7f8f9;
+        }
+        .current{
+            border-top-color: black ;
+            font-family: 'Rubik', sans-serif;
+            border-bottom: none;
+        }
+    }
+    .content{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .image{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 250px;
+            }
+        }
+        .ProductInfo{
+            .price{
+                font-family: 'Rubik', sans-serif;
+                display: flex;
+                align-items: center;
+                .discount{
+                    text-decoration-line: line-through;
+                    color: #999;
+                }
+                .newPrice{
+                    color: #ff7e00;
+                    font-size: 18px;
+                    margin-left: 10px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

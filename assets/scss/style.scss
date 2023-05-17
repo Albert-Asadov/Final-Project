@@ -272,7 +272,6 @@ body {
                     padding-top: 10px;
                     border-radius: 3px;
                     width: 290px;
-                    height: 140px;
                     position: absolute;
                     background-color: white;
                     border: 1px solid black;
@@ -283,18 +282,79 @@ body {
                     padding-bottom: 10px;
                     right: -22px;
                     top: 52px;
+                    z-index: 5000;
 
                     ul {
-                        padding-left: 15px;
-
+                        
+                        padding-left: 10px;
                         li {
                             list-style: none;
                             padding-top: 10px;
+                            border-bottom: 1px solid #e5e5e5;
 
-                            a {
-                                color: #666;
+                            .product {
+                                display: flex;
+                                .image {
+                                    img {
+                                        width: 65px;
+                                    }
+                                }
+
+                                .about {
+                                    margin-left: 15px;
+                                    .name {
+                                        font-family: 'Rubik', sans-serif;
+                                        color: #666;
+
+                                        a {
+                                            font-size: 14px;
+                                            color: #666;
+                                            text-decoration: none;
+                                            font-family: 'Rubik', sans-serif;
+
+                                            &:hover {
+                                                color: #ff7e00;
+                                            }
+                                        }
+                                    }
+
+                                    .priceCount {
+                                        font-family: 'Rubik', sans-serif;
+                                        color: #ff7e00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .buttons{
+                        display: flex;
+                        justify-content: space-evenly;
+                        .goOrder{
+                            a{
+                                border-radius: 20px;
+                                text-align: center;
+                                padding-top: 4px;
+                                display: inline-block;
+                                width: 132px;
+                                height: 30px;
+                                font-size: 13px;
                                 text-decoration: none;
-                                font-family: 'Rubik', sans-serif;
+                                background-color: #232f3f;
+                                color: white;
+                            }
+                        }
+                        .goCart{
+                            a{  
+                                border-radius: 20px;
+                                text-align: center;
+                                padding-top: 4px;
+                                display: inline-block;
+                                width: 132px;
+                                height: 30px;
+                                font-size: 13px;
+                                text-decoration: none;
+                                background-color: #ff7e00;
+                                color: white;
                             }
                         }
                     }
@@ -528,8 +588,9 @@ body {
                     }
                 }
             }
-            .owl-nav{
-                .owl-prev{
+
+            .owl-nav {
+                .owl-prev {
                     color: white;
                     border-radius: 50px;
                     padding-top: 10px;
@@ -546,18 +607,21 @@ body {
                     z-index: 5;
                     font-size: 35px;
                     cursor: pointer;
-                    span{
+
+                    span {
                         position: absolute;
                         bottom: 0px;
                         left: 15px;
                         font-weight: 100;
                     }
+
                     &:hover {
                         background-color: #ff7e00;
-                        border-color: #ff7e00 ;
+                        border-color: #ff7e00;
                     }
                 }
-                .owl-next{
+
+                .owl-next {
                     cursor: pointer;
                     color: white;
                     border: 1px solid #e6e6e6;
@@ -572,15 +636,17 @@ body {
                     right: 1px;
                     z-index: 5;
                     font-size: 35px;
-                    span{
+
+                    span {
                         position: absolute;
                         bottom: 0px;
                         right: 13px;
                         font-weight: 100;
                     }
+
                     &:hover {
                         background-color: #ff7e00;
-                        border-color: #ff7e00 ;
+                        border-color: #ff7e00;
                     }
                 }
             }
@@ -936,6 +1002,7 @@ body {
                 padding-top: 30px;
                 padding-bottom: 10px;
                 position: relative;
+
                 .prev_arrow {
                     color: white;
                     border-radius: 50px;
@@ -957,6 +1024,7 @@ body {
                         background-color: #ff7e00;
                     }
                 }
+
                 .next_arrow {
                     cursor: pointer;
                     color: white;
@@ -978,14 +1046,17 @@ body {
                         background-color: #ff7e00;
                     }
                 }
+
                 ul {
                     padding: 0;
                     margin: 0;
+
                     li {
                         list-style: none;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+
                         .image {
                             display: flex;
                             justify-content: center;
@@ -996,42 +1067,53 @@ body {
                                 width: 270px;
                             }
                         }
+
                         .textDeal {
                             font-family: 'Rubik', sans-serif;
+
                             .title {
                                 a {
                                     text-decoration: none;
                                     color: #333;
+
                                     h4 {
                                         font-size: 16px;
                                         transition: .4s;
+
                                         &:hover {
                                             color: #ff7e00;
                                         }
                                     }
                                 }
                             }
+
                             .textContent {
                                 padding-top: 10px;
                                 width: 425px;
+
                                 p {
                                     font-size: 14px;
                                 }
                             }
+
                             .price {
                                 padding-top: 10px;
+
                                 ul {
                                     display: flex;
                                     padding: 0;
                                     margin: 0;
+
                                     li {
                                         list-style: none;
                                     }
+
                                     .old {
                                         color: #999;
                                         font-size: 14px;
                                         text-decoration-line: line-through;
                                     }
+
                                     .new {
                                         color: #ff7e00;
                                         font-weight: 500;
@@ -1039,8 +1121,10 @@ body {
                                     }
                                 }
                             }
+
                             .addToCard {
                                 padding-top: 20px;
+
                                 a {
                                     padding: 3px 0 6px 0;
                                     border-radius: 20px;
@@ -1053,6 +1137,7 @@ body {
                                     color: #666;
                                     background-color: #f2f5f7;
                                     border-color: #f2f5f7;
+
                                     &:hover {
                                         background-color: #ff7e00;
                                         color: white;
@@ -1063,22 +1148,28 @@ body {
                     }
                 }
             }
-            .productFirst, .productSecond {
+
+            .productFirst,
+            .productSecond {
                 padding-top: 10px;
+
                 .title {
                     .upperLine {
                         padding-bottom: 10px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
                         ul {
                             display: flex;
                             padding: 0;
                             margin: 0;
+
                             li {
                                 font-size: 14px;
                                 margin-right: 20px;
                                 list-style: none;
+
                                 a {
                                     color: #93979c;
                                     text-decoration: none;
@@ -1087,8 +1178,10 @@ body {
                         }
                     }
                 }
+
                 .products {
                     position: relative;
+
                     .prev_arrow {
                         color: white;
                         border-radius: 50px;
@@ -1105,10 +1198,12 @@ body {
                         font-size: 22px;
                         z-index: 5;
                         cursor: pointer;
+
                         &:hover {
                             background-color: #ff7e00;
                         }
                     }
+
                     .next_arrow {
                         cursor: pointer;
                         color: white;
@@ -1125,30 +1220,38 @@ body {
                         right: 1px;
                         z-index: 5;
                         font-size: 22px;
+
                         &:hover {
                             background-color: #ff7e00;
                         }
                     }
+
                     ul {
                         padding: 0;
                         margin: 0;
+
                         li {
                             border-right: 1px solid #ebebeb;
                             list-style: none;
+
                             .image {
                                 a {
                                     text-decoration: none;
+
                                     img {
                                         width: 240px;
                                         margin: 0 auto;
                                     }
                                 }
                             }
+
                             .text {
                                 &:hover .addToCard {
                                     display: block;
                                 }
+
                                 text-align: center;
+
                                 .brand {
                                     margin-top: 10px;
                                     margin-bottom: 10px;
@@ -1156,17 +1259,21 @@ body {
                                     font-size: 12px;
                                     color: #999;
                                 }
+
                                 .name {
                                     color: #4f4f4f;
                                     font-size: 15px;
                                 }
+
                                 .price {
                                     margin-top: 15px;
                                     font-size: 16px;
                                     color: #ff7e00;
                                 }
+
                                 .addToCard {
                                     display: none;
+
                                     a {
                                         padding-top: 2px;
                                         border-radius: 20px;
@@ -1183,76 +1290,94 @@ body {
                     }
                 }
             }
-            .adverstingMainPage{
-                padding-top: 40px;
-                padding-bottom: 30px;
-                display: flex;
-                 flex-wrap: wrap;
-                .firstImage{
-                    img{
-                        object-fit: contain;
-                        width: 97%;
-                    }
-                }
-                .secondImage{
-                    text-align: end;
-                    img{
-                        object-fit: contain;
-                        width: 97%;
-                    }
-                }
-            }
-            .adverstingMainPageSecond{
+
+            .adverstingMainPage {
                 padding-top: 40px;
                 padding-bottom: 30px;
                 display: flex;
                 flex-wrap: wrap;
-                .firstImage{
-                    img{
+
+                .firstImage {
+                    img {
                         object-fit: contain;
                         width: 97%;
                     }
                 }
-                .secondImage{
+
+                .secondImage {
                     text-align: end;
-                    img{
+
+                    img {
                         object-fit: contain;
                         width: 97%;
                     }
                 }
             }
-            .category, .categoryForMD{
-                .all{
+
+            .adverstingMainPageSecond {
+                padding-top: 40px;
+                padding-bottom: 30px;
+                display: flex;
+                flex-wrap: wrap;
+
+                .firstImage {
+                    img {
+                        object-fit: contain;
+                        width: 97%;
+                    }
+                }
+
+                .secondImage {
+                    text-align: end;
+
+                    img {
+                        object-fit: contain;
+                        width: 97%;
+                    }
+                }
+            }
+
+            .category,
+            .categoryForMD {
+                .all {
                     display: flex;
                     flex-wrap: wrap;
-                    .categSearch{
+
+                    .categSearch {
                         font-size: 14px;
-                        .image{
-                            img{
+
+                        .image {
+                            img {
                                 object-fit: contain;
                                 width: 73%;
                             }
                         }
-                        .title{
+
+                        .title {
                             margin-top: 15px;
                             font-size: 12px;
                             transition: .4s;
-                            &:hover{
+
+                            &:hover {
                                 color: #ff7e00;
                             }
                         }
-                        .cat{
-                            ul{
+
+                        .cat {
+                            ul {
                                 padding: 0;
                                 margin: 0;
-                                li{
+
+                                li {
                                     margin-top: 10px;
                                     list-style: none;
-                                    a{
+
+                                    a {
                                         text-decoration: none;
                                         color: #4f4f4f;
                                         transition: .4s;
-                                        &:hover{
+
+                                        &:hover {
                                             color: #ff7e00;
                                         }
                                     }
@@ -1262,9 +1387,11 @@ body {
                     }
                 }
             }
-           .categoryForMD{
-                .allForMd{
+
+            .categoryForMD {
+                .allForMd {
                     position: relative;
+
                     .prev_arrow {
                         color: white;
                         border-radius: 50px;
@@ -1281,10 +1408,12 @@ body {
                         font-size: 22px;
                         z-index: 5;
                         cursor: pointer;
+
                         &:hover {
                             background-color: #ff7e00;
                         }
                     }
+
                     .next_arrow {
                         cursor: pointer;
                         color: white;
@@ -1301,45 +1430,55 @@ body {
                         right: 1px;
                         z-index: 5;
                         font-size: 22px;
+
                         &:hover {
                             background-color: #ff7e00;
                         }
                     }
+
                     display: flex;
                     flex-wrap: wrap;
-                    .categSearch{
+
+                    .categSearch {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
                         font-size: 14px;
-                        .image{
-                            img{
+
+                        .image {
+                            img {
                                 object-fit: contain;
                                 width: 190px;
                                 margin: 0 auto;
                             }
                         }
-                        .title{
+
+                        .title {
                             margin-top: 15px;
                             font-size: 12px;
                             transition: .4s;
-                            &:hover{
+
+                            &:hover {
                                 color: #ff7e00;
                             }
                         }
-                        .cat{
-                            ul{
+
+                        .cat {
+                            ul {
                                 padding: 0;
                                 margin: 0;
-                                li{
+
+                                li {
                                     margin-top: 10px;
                                     list-style: none;
-                                    a{
+
+                                    a {
                                         text-decoration: none;
                                         color: #4f4f4f;
                                         transition: .4s;
-                                        &:hover{
+
+                                        &:hover {
                                             color: #ff7e00;
                                         }
                                     }

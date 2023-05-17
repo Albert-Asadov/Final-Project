@@ -1,0 +1,68 @@
+#accountWishlist {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#accountWishlist .title {
+  padding: 0;
+  margin: 0;
+}
+#accountWishlist .title .TitleText {
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+#accountWishlist ul {
+  display: inline-block;
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+}
+#accountWishlist ul li {
+  padding: 7px;
+  border: 1px solid #e5e5e5;
+  list-style: none;
+  font-size: 14px;
+}
+#accountWishlist ul li a {
+  font-family: "Rubik", sans-serif;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+#accountWishlist ul .colorChange {
+  background-color: #f7f8f9;
+}
+#accountWishlist ul .current {
+  border-top-color: black;
+  font-family: "Rubik", sans-serif;
+  border-bottom: none;
+}
+#accountWishlist .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#accountWishlist .content .image {
+  display: flex;
+  justify-content: center;
+}
+#accountWishlist .content .image img {
+  width: 250px;
+}
+#accountWishlist .content .ProductInfo .price {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+}
+#accountWishlist .content .ProductInfo .price .discount {
+  text-decoration-line: line-through;
+  color: #999;
+}
+#accountWishlist .content .ProductInfo .price .newPrice {
+  color: #ff7e00;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 600;
+}/*# sourceMappingURL=accountWishlist.css.map */
