@@ -45,8 +45,26 @@
         .image{
             display: flex;
             justify-content: center;
+            position: relative;
             img{
                 width: 250px;
+            }
+            .buttonHover{
+                display: none;
+                .AddToCart{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 14px;
+                    background-color: rgba(255, 255, 255, 0.876);
+                    position: absolute;
+                    top: 48%;
+                    left: 45%;
+                    border-radius: 20px;
+                    padding-top: 2px;
+                    text-align: center;
+                    height: 25px;
+                    width: 120px;
+                }
             }
         }
         .ProductInfo{
