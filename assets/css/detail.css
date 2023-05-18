@@ -11,6 +11,13 @@ body {
 #MainHeader {
   background-color: #232f3f;
 }
+#MainHeader.headerScroll {
+  background-color: rgba(35, 47, 63, 0.9333333333);
+  position: sticky;
+  z-index: 1000000000;
+  transition: 0.5s;
+  top: 0;
+}
 #MainHeader .upper {
   display: flex;
   align-items: center;
@@ -70,9 +77,9 @@ body {
   transform: rotateZ(45deg);
 }
 #MainHeader .upper .nav .login .panel {
+  z-index: 200;
   border-radius: 3px;
   width: 150px;
-  height: 70px;
   position: absolute;
   background-color: white;
   border: 1px solid black;
@@ -138,7 +145,7 @@ body {
   margin-right: 20px;
   position: relative;
 }
-#MainHeader .middle .icons .accountIcon .empty {
+#MainHeader .middle .icons .accountIcon .emptyMyAcc {
   height: 10px;
   width: 10px;
   background-color: white;
@@ -147,11 +154,10 @@ body {
   top: 49px;
   transform: rotateZ(45deg);
 }
-#MainHeader .middle .icons .accountIcon .panel {
-  padding-top: 10px;
+#MainHeader .middle .icons .accountIcon .panelMyAcc {
+  padding-top: 6px;
   border-radius: 3px;
   width: 150px;
-  height: 70px;
   position: absolute;
   background-color: white;
   border: 1px solid black;
@@ -162,15 +168,18 @@ body {
   padding-bottom: 10px;
   left: 11px;
   top: 52px;
+  z-index: 200;
 }
-#MainHeader .middle .icons .accountIcon .panel ul {
+#MainHeader .middle .icons .accountIcon .panelMyAcc ul {
   padding-left: 15px;
+  font-size: 14px;
 }
-#MainHeader .middle .icons .accountIcon .panel ul li {
+#MainHeader .middle .icons .accountIcon .panelMyAcc ul li {
+  display: block;
   list-style: none;
-  padding-top: 10px;
+  padding-top: 5px;
 }
-#MainHeader .middle .icons .accountIcon .panel ul li a {
+#MainHeader .middle .icons .accountIcon .panelMyAcc ul li a {
   color: #666;
   text-decoration: none;
   font-family: "Rubik", sans-serif;
@@ -215,7 +224,7 @@ body {
   align-items: center;
   position: relative;
 }
-#MainHeader .middle .icons .basketIcon .empty {
+#MainHeader .middle .icons .basketIcon .emptyBasketItems {
   height: 15px;
   width: 15px;
   background-color: white;
@@ -224,11 +233,10 @@ body {
   top: 46px;
   transform: rotateZ(45deg);
 }
-#MainHeader .middle .icons .basketIcon .panel {
+#MainHeader .middle .icons .basketIcon .panelBasketItems {
   padding-top: 10px;
   border-radius: 3px;
   width: 290px;
-  height: 140px;
   position: absolute;
   background-color: white;
   border: 1px solid black;
@@ -239,18 +247,69 @@ body {
   padding-bottom: 10px;
   right: -22px;
   top: 52px;
+  z-index: 5000;
 }
-#MainHeader .middle .icons .basketIcon .panel ul {
-  padding-left: 15px;
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul {
+  padding-left: 10px;
 }
-#MainHeader .middle .icons .basketIcon .panel ul li {
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul li {
   list-style: none;
   padding-top: 10px;
+  border-bottom: 1px solid #e5e5e5;
 }
-#MainHeader .middle .icons .basketIcon .panel ul li a {
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul li .product {
+  display: flex;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul li .product .image img {
+  width: 65px;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul li .product .about {
+  margin-left: 15px;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul li .product .about .name {
+  font-family: "Rubik", sans-serif;
+  color: #666;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul li .product .about .name a {
+  font-size: 14px;
   color: #666;
   text-decoration: none;
   font-family: "Rubik", sans-serif;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul li .product .about .name a:hover {
+  color: #ff7e00;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems ul li .product .about .priceCount {
+  font-family: "Rubik", sans-serif;
+  color: #ff7e00;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems .buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems .buttons .goOrder a {
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 4px;
+  display: inline-block;
+  width: 132px;
+  height: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  background-color: #232f3f;
+  color: white;
+}
+#MainHeader .middle .icons .basketIcon .panelBasketItems .buttons .goCart a {
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 4px;
+  display: inline-block;
+  width: 132px;
+  height: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  background-color: #ff7e00;
+  color: white;
 }
 #MainHeader .middle .icons .basketIcon .icon {
   border: 1px solid gray;
@@ -374,6 +433,28 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+#secondaryHeader .hamburgerMenu {
+  border-bottom: 1px solid #8f8f8f;
+  position: absolute;
+  top: 53px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+  width: 100%;
+  z-index: 300000;
+}
+#secondaryHeader .hamburgerMenu ul {
+  padding: 0;
+  margin: 0;
+}
+#secondaryHeader .hamburgerMenu ul li {
+  margin-top: 15px;
+  list-style: none;
+}
+#secondaryHeader .hamburgerMenu ul li a {
+  text-decoration: none;
+  color: #666;
 }
 #secondaryHeader .upperRow {
   display: flex;
@@ -1005,6 +1086,40 @@ footer {
 }
 footer .upper {
   padding: 45px;
+}
+footer .upper .accordionFooter .accordion {
+  border: none !important;
+}
+footer .upper .accordionFooter .accordion .accordion-item {
+  border: none !important;
+}
+footer .upper .accordionFooter .accordion .accordion-item .accordion-header button {
+  border-color: #232f3f;
+  background-color: #232f3f;
+  color: white;
+  border: none;
+}
+footer .upper .accordionFooter .accordion .accordion-item .accordion-header button ::after {
+  color: white !important;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse {
+  border: none !important;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse .accordion-body {
+  border: none !important;
+  border-color: #232f3f;
+  background-color: #232f3f;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse .accordion-body ul {
+  padding: 0;
+  margin: 0;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse .accordion-body ul li {
+  list-style: none;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse .accordion-body ul li a {
+  text-decoration: none;
+  color: white;
 }
 footer .upper .logo-info .adress .ear {
   margin-top: 20px;

@@ -11,6 +11,14 @@ body {
 #MainHeader {
     background-color: #232f3f;
 
+    &.headerScroll {
+        background-color: #232f3fee;
+        position: sticky;
+        z-index: 1000000000;
+        transition: .5s;
+        top: 0;
+    }
+
     .upper {
         display: flex;
         align-items: center;
@@ -517,6 +525,28 @@ body {
     align-items: center;
     flex-direction: column;
 
+    .hamburgerMenu{
+        border-bottom: 1px solid #8f8f8f;
+        position: absolute;
+        top:53px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: white;
+        width: 100%;
+        z-index: 300000;
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                margin-top: 15px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: #666;
+                }
+            }
+        }
+    }
     .upperRow {
         display: flex;
         justify-content: center;
@@ -532,6 +562,7 @@ body {
 
         .menu {
             text-align: start;
+            
         }
 
         .basketIcon {
@@ -1495,6 +1526,29 @@ body {
             }
         }
     }
+    .up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 85px;
+        bottom: 25px;
+        position: fixed;
+        padding-top: 12px;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        margin: 0;
+        border-radius: 3px;
+        cursor: pointer;
+        background: #999;
+        color: #fff;
+        text-align: center;
+        transition: .4s;
+        z-index: 300;
+        &:hover{
+            background-color: #ff7e00;
+        }
+    }
 }
 
 footer {
@@ -1502,6 +1556,48 @@ footer {
 
     .upper {
         padding: 45px;
+
+        .accordionFooter{
+            .accordion{
+                border: none !important;
+                .accordion-item{
+                border: none !important;
+
+                    .accordion-header{
+                        button{
+                            border-color: #232f3f;
+                            background-color: #232f3f ;
+                            color: white;
+                            border: none;
+                            ::after{
+                                color: white !important;
+                            }
+                        }
+                    }
+                }
+                .accordion-collapse{
+                         border: none !important;
+
+                    .accordion-body{
+                         border: none !important;
+
+                        border-color: #232f3f;
+                        background-color: #232f3f;
+                        ul{
+                            padding: 0;
+                            margin: 0;
+                            li{
+                                list-style: none;
+                                a{
+                                    text-decoration: none;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         .logo-info {
             .adress {

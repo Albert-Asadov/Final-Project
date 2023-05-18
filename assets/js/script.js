@@ -10,32 +10,55 @@ var iconBasket = document.querySelector(".basketIcon");
 var panelAccountBasket = document.querySelector(".panelBasketItems");
 var emptyAccountBasket = document.querySelector(".emptyBasketItems")
 
-login.addEventListener("click", function(){
-  
+
+var hambMenu  =document.querySelector(".menu");
+var hambMenuCateg = document.querySelector(".hamburgerMenu");
+
+
+hambMenu.addEventListener("click", function(e){
+  e.stopPropagation()
+
+  hambMenuCateg.setAttribute("style","display:block !important")
+
+})
+
+
+login.addEventListener("click", function(e){
+   e.stopPropagation()
     empty.setAttribute("style","display:block !important")
     panel.setAttribute("style","display:block !important")
 
 })
 
-iconAcc.addEventListener("click", function(){
-  
+iconAcc.addEventListener("click", function(e){
+  e.stopPropagation();
   emptyAccount.setAttribute("style","display:block !important")
   panelAccount.setAttribute("style","display:block !important")
 
 })
 
-
-iconBasket.addEventListener("click", function(){
+iconBasket.addEventListener("click", function(e){
   
+  e.stopPropagation();
   panelAccountBasket.setAttribute("style","display:block !important")
   emptyAccountBasket.setAttribute("style","display:block !important")
-
+  
 })
 
-// window.addEventListener("click",function(){
-//   empty.setAttribute("style","display:none !important")
-//     panel.setAttribute("style","display:none !important")
-// })
+
+window.addEventListener("click",function(){
+  emptyAccount.setAttribute("style","display:none !important")
+  panelAccount.setAttribute("style","display:none !important")
+
+  empty.setAttribute("style","display:none !important")
+  panel.setAttribute("style","display:none !important")
+
+  panelAccountBasket.setAttribute("style","display:none !important")
+  emptyAccountBasket.setAttribute("style","display:none !important")
+
+  hambMenuCateg.setAttribute("style","display:none !important")
+
+})
 
 
 $('.owl-carousel').owlCarousel({
@@ -246,3 +269,35 @@ $('.responsive').slick({
       // instead of a settings object
     ]
   });
+
+
+  let up =document.querySelector(".up");
+  up.onclick = function(e){
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+}
+
+const mainHeader = document.getElementById('MainHeader');
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 100 || window.pageYOffset >= 100) {
+    mainHeader.classList.add('headerScroll');
+  } else {
+    mainHeader.classList.remove('headerScroll')
+  }
+});
+
+let i = document.querySelector(".up")
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 250 || window.pageYOffset >= 250) {
+    i.classList.add('i');
+    i.style.opacity = "1";
+  } else {
+    i.classList.remove('i');
+    i.style.opacity = "0";
+  }
+});

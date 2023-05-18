@@ -1,12 +1,3 @@
-
-var button = document.querySelector(".buttonHover");
-var image = document.querySelector(".imageProduct");
-
-image.addEventListener("mouseover", function(){
-
-    button.style.display = "block";
-
-})
 var login = document.querySelector(".login");
 var panel = document.querySelector(".panel");
 var empty = document.querySelector(".empty")
@@ -18,6 +9,7 @@ var emptyAccount = document.querySelector(".emptyMyAcc")
 var iconBasket = document.querySelector(".basketIcon");
 var panelAccountBasket = document.querySelector(".panelBasketItems");
 var emptyAccountBasket = document.querySelector(".emptyBasketItems")
+
 
 var hambMenu  =document.querySelector(".menu");
 var hambMenuCateg = document.querySelector(".hamburgerMenu");

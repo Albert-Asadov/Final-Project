@@ -11,6 +11,13 @@ body {
 #MainHeader {
   background-color: #232f3f;
 }
+#MainHeader.headerScroll {
+  background-color: rgba(35, 47, 63, 0.9333333333);
+  position: sticky;
+  z-index: 1000000000;
+  transition: 0.5s;
+  top: 0;
+}
 #MainHeader .upper {
   display: flex;
   align-items: center;
@@ -426,6 +433,28 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+#secondaryHeader .hamburgerMenu {
+  border-bottom: 1px solid #8f8f8f;
+  position: absolute;
+  top: 53px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+  width: 100%;
+  z-index: 300000;
+}
+#secondaryHeader .hamburgerMenu ul {
+  padding: 0;
+  margin: 0;
+}
+#secondaryHeader .hamburgerMenu ul li {
+  margin-top: 15px;
+  list-style: none;
+}
+#secondaryHeader .hamburgerMenu ul li a {
+  text-decoration: none;
+  color: #666;
 }
 #secondaryHeader .upperRow {
   display: flex;
@@ -1263,12 +1292,69 @@ body {
 #main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul li a:hover {
   color: #ff7e00;
 }
+#main .up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 85px;
+  bottom: 25px;
+  position: fixed;
+  padding-top: 12px;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #999;
+  color: #fff;
+  text-align: center;
+  transition: 0.4s;
+  z-index: 300;
+}
+#main .up:hover {
+  background-color: #ff7e00;
+}
 
 footer {
   background-color: #232f3f;
 }
 footer .upper {
   padding: 45px;
+}
+footer .upper .accordionFooter .accordion {
+  border: none !important;
+}
+footer .upper .accordionFooter .accordion .accordion-item {
+  border: none !important;
+}
+footer .upper .accordionFooter .accordion .accordion-item .accordion-header button {
+  border-color: #232f3f;
+  background-color: #232f3f;
+  color: white;
+  border: none;
+}
+footer .upper .accordionFooter .accordion .accordion-item .accordion-header button ::after {
+  color: white !important;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse {
+  border: none !important;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse .accordion-body {
+  border: none !important;
+  border-color: #232f3f;
+  background-color: #232f3f;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse .accordion-body ul {
+  padding: 0;
+  margin: 0;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse .accordion-body ul li {
+  list-style: none;
+}
+footer .upper .accordionFooter .accordion .accordion-collapse .accordion-body ul li a {
+  text-decoration: none;
+  color: white;
 }
 footer .upper .logo-info .adress .ear {
   margin-top: 20px;

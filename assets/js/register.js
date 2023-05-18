@@ -1,12 +1,3 @@
-
-var button = document.querySelector(".buttonHover");
-var image = document.querySelector(".imageProduct");
-
-image.addEventListener("mouseover", function(){
-
-    button.style.display = "block";
-
-})
 var login = document.querySelector(".login");
 var panel = document.querySelector(".panel");
 var empty = document.querySelector(".empty")
@@ -63,6 +54,7 @@ window.addEventListener("click",function(){
     emptyAccountBasket.setAttribute("style","display:none !important")
 
     hambMenuCateg.setAttribute("style","display:none !important")
+
 })
 
 
