@@ -2,10 +2,34 @@ var login = document.querySelector(".login");
 var panel = document.querySelector(".panel");
 var empty = document.querySelector(".empty")
 
+var iconAcc = document.querySelector(".accountIcon");
+var panelAccount = document.querySelector(".panelMyAcc");
+var emptyAccount = document.querySelector(".emptyMyAcc")
+
+var iconBasket = document.querySelector(".basketIcon");
+var panelAccountBasket = document.querySelector(".panelBasketItems");
+var emptyAccountBasket = document.querySelector(".emptyBasketItems")
+
 login.addEventListener("click", function(){
   
     empty.setAttribute("style","display:block !important")
     panel.setAttribute("style","display:block !important")
+
+})
+
+iconAcc.addEventListener("click", function(){
+  
+  emptyAccount.setAttribute("style","display:block !important")
+  panelAccount.setAttribute("style","display:block !important")
+
+})
+
+
+iconBasket.addEventListener("click", function(){
+  
+  panelAccountBasket.setAttribute("style","display:block !important")
+  emptyAccountBasket.setAttribute("style","display:block !important")
+
 })
 
 // window.addEventListener("click",function(){

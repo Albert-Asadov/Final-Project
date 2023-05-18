@@ -1,0 +1,42 @@
+#pages{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .page{
+        .title{
+            font-family: 'Rubik', sans-serif;
+            h4{
+
+            }
+        }
+        .text{
+            font-family: 'Rubik', sans-serif;
+        }
+    }
+    .return{
+        .title{
+            font-family: 'Rubik', sans-serif;
+            h4{
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+        .text{
+            font-family: 'Rubik', sans-serif;
+        }
+    }
+    .shipping{
+        .title{
+            font-family: 'Rubik', sans-serif;
+            h4{
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+        .text{
+            font-family: 'Rubik', sans-serif;
+        }
+    }
+    .return, .shipping{
+        padding-top: 20px;
+    }
+}

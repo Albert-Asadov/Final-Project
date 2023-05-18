@@ -81,9 +81,9 @@ body {
                 }
 
                 .panel {
+                    z-index: 200;
                     border-radius: 3px;
                     width: 150px;
-                    height: 70px;
                     position: absolute;
                     background-color: white;
                     border: 1px solid black;
@@ -165,7 +165,7 @@ body {
                 margin-right: 20px;
                 position: relative;
 
-                .empty {
+                .emptyMyAcc {
                     height: 10px;
                     width: 10px;
                     background-color: white;
@@ -175,11 +175,10 @@ body {
                     transform: rotateZ(45deg);
                 }
 
-                .panel {
-                    padding-top: 10px;
+                .panelMyAcc {
+                    padding-top: 6px;
                     border-radius: 3px;
                     width: 150px;
-                    height: 70px;
                     position: absolute;
                     background-color: white;
                     border: 1px solid black;
@@ -190,14 +189,15 @@ body {
                     padding-bottom: 10px;
                     left: 11px;
                     top: 52px;
+                    z-index: 200;
 
                     ul {
                         padding-left: 15px;
-
+                        font-size: 14px;
                         li {
+                            display: block;
                             list-style: none;
-                            padding-top: 10px;
-
+                            padding-top: 5px;
                             a {
                                 color: #666;
                                 text-decoration: none;
@@ -258,7 +258,7 @@ body {
                 align-items: center;
                 position: relative;
 
-                .empty {
+                .emptyBasketItems {
                     height: 15px;
                     width: 15px;
                     background-color: white;
@@ -268,7 +268,7 @@ body {
                     transform: rotateZ(45deg);
                 }
 
-                .panel {
+                .panelBasketItems {
                     padding-top: 10px;
                     border-radius: 3px;
                     width: 290px;
@@ -285,8 +285,9 @@ body {
                     z-index: 5000;
 
                     ul {
-                        
+
                         padding-left: 10px;
+
                         li {
                             list-style: none;
                             padding-top: 10px;
@@ -294,6 +295,7 @@ body {
 
                             .product {
                                 display: flex;
+
                                 .image {
                                     img {
                                         width: 65px;
@@ -302,6 +304,7 @@ body {
 
                                 .about {
                                     margin-left: 15px;
+
                                     .name {
                                         font-family: 'Rubik', sans-serif;
                                         color: #666;
@@ -326,11 +329,13 @@ body {
                             }
                         }
                     }
-                    .buttons{
+
+                    .buttons {
                         display: flex;
                         justify-content: space-evenly;
-                        .goOrder{
-                            a{
+
+                        .goOrder {
+                            a {
                                 border-radius: 20px;
                                 text-align: center;
                                 padding-top: 4px;
@@ -343,8 +348,9 @@ body {
                                 color: white;
                             }
                         }
-                        .goCart{
-                            a{  
+
+                        .goCart {
+                            a {
                                 border-radius: 20px;
                                 text-align: center;
                                 padding-top: 4px;
@@ -416,7 +422,6 @@ body {
         .categories {
             &:hover .panelCategory {
                 display: block;
-
             }
 
             cursor: pointer;
