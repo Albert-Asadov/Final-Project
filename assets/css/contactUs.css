@@ -724,4 +724,8 @@ footer .bottomLine .paymant ul li {
 }
 footer .bottomLine .paymant ul li i {
   font-size: 25px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }/*# sourceMappingURL=contactUs.css.map */

@@ -731,6 +731,60 @@
             }
         }
     }
+
+    .smallDisplayTable{
+        .upper{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            .image{
+                img{
+                    width: 200px;
+                }
+            }
+            .text{
+                .brand{
+                    font-size: 14px;
+                    color: #93979c;
+                }
+                .name{
+                    font-size: 15px;
+                    a{
+                        color: #ff7e00;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .quantity{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            
+            div{
+                button{
+                    border: none;
+                    background-color: white;
+                    width: 28px;
+                    height: 25px;
+                    border: 1px solid #8f8f8f;
+                    text-align: center;
+                    border-radius: 15px;
+                }
+            }
+            .input{
+                input{
+                    font-family: 'Rubik', sans-serif;
+                    width: 40px;
+                    color: #666;
+                    border: none;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
     .shippingInfo{
         padding-top: 30px;
         width: 50%;

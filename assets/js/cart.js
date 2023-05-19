@@ -15,6 +15,23 @@ function handleDEcreaseQuantity(){
     }
 }
 
+
+let inputSM = document.querySelector(".quantityInputSM")
+
+
+function handleIncreaseQuantitySM(){
+  inputSM.value++
+}
+function handleDEcreaseQuantitySM(){
+
+    if(inputSM.value <=1){
+    
+    }
+    else{
+      inputSM.value--
+    }
+}
+
 var table = document.querySelector(".mainDescr");
 
 var iconDelete = document.querySelector(".delete");
