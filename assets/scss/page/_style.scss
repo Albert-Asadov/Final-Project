@@ -613,17 +613,31 @@ body {
 
         .owl-carousel {
             .owl-stage-outer {
+                height: 520px;
                 .owl-stage {
                     .owl-item {
                         .item {
                             img {
-                                object-fit: contain;
+                                object-position: center;
+                                object-fit: cover;
                                 width: 100%;
                             }
                         }
                     }
                 }
             }
+            @media only screen and (max-width: 821px) {
+
+                .owl-stage-outer{
+                    height: 368px;
+                }
+             }
+             @media only screen and (max-width: 391px) {
+
+                .owl-stage-outer{
+                    height: 198px;
+                }
+             }
 
             .owl-nav {
                 .owl-prev {
@@ -669,7 +683,7 @@ body {
                     color: #8f8f8f;
                     position: absolute;
                     top: 50%;
-                    right: 1px;
+                    right: 13px;
                     z-index: 5;
                     font-size: 35px;
 
@@ -694,6 +708,7 @@ body {
             img {
                 width: 100%;
                 height: 160px;
+               
             }
         }
 
@@ -701,6 +716,12 @@ body {
         .third {
             margin-top: 20px;
         }
+    }
+    @media only screen and (max-width: 821px) {
+
+       .advertising{
+        padding-top: 15px;
+       }
     }
 
     @media only screen and (max-width: 821px) {
@@ -1134,7 +1155,7 @@ body {
 
                             .price {
                                 padding-top: 10px;
-
+                                font-family: 'Rubik', sans-serif;
                                 ul {
                                     display: flex;
                                     padding: 0;
@@ -1162,6 +1183,7 @@ body {
                                 padding-top: 20px;
 
                                 a {
+                                    font-family: 'Rubik', sans-serif;
                                     padding: 3px 0 6px 0;
                                     border-radius: 20px;
                                     display: inline-block;
@@ -1191,6 +1213,7 @@ body {
 
                 .title {
                     .upperLine {
+                        font-family: 'Rubik', sans-serif;
                         padding-bottom: 10px;
                         display: flex;
                         justify-content: space-between;
@@ -1202,11 +1225,13 @@ body {
                             margin: 0;
 
                             li {
+                                font-family: 'Rubik', sans-serif;
                                 font-size: 14px;
                                 margin-right: 20px;
                                 list-style: none;
 
                                 a {
+                                    font-family: 'Rubik', sans-serif;
                                     color: #93979c;
                                     text-decoration: none;
                                 }
@@ -1282,6 +1307,7 @@ body {
                             }
 
                             .text {
+                                font-family: 'Rubik', sans-serif;
                                 &:hover .addToCard {
                                     display: block;
                                 }
@@ -1289,6 +1315,7 @@ body {
                                 text-align: center;
 
                                 .brand {
+                                    font-family: 'Rubik', sans-serif;
                                     margin-top: 10px;
                                     margin-bottom: 10px;
                                     text-transform: uppercase;
@@ -1297,14 +1324,27 @@ body {
                                 }
 
                                 .name {
+                                    font-family: 'Rubik', sans-serif;
                                     color: #4f4f4f;
                                     font-size: 15px;
                                 }
 
                                 .price {
+                                    font-family: 'Rubik', sans-serif;
                                     margin-top: 15px;
-                                    font-size: 16px;
-                                    color: #ff7e00;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .discountPrice{
+                                        color: #999;
+                                        font-size: 14px;
+                                        text-decoration-line: line-through;
+                                    }
+                                    .realPrice{
+                                        margin-left: 10px;
+                                        font-size: 16px;
+                                        color: #ff7e00;
+                                    }
                                 }
 
                                 .addToCard {
@@ -1349,6 +1389,28 @@ body {
                     }
                 }
             }
+             @media only screen and (max-width: 821px) {
+
+                .firstImage {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    img {
+                        margin: 0 auto;
+                    }
+                }
+                .secondImage {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 10px;
+                    text-align: center;
+                    img {
+                        margin: 0 auto;
+                    }
+                }
+             }
 
             .adverstingMainPageSecond {
                 padding-top: 40px;

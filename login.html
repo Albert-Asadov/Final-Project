@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/login.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
     <title>Login</title>
 </head>
 <body>
@@ -273,14 +273,22 @@
                                 <h4>Sign In</h4>
                             </div>
                             <div class="input">
-                                <div class="email">
-                                    <label for="email">Email Adress:</label><br>
-                                    <input type="email" name="" id="email">
-                                </div>
-                                <div class="password">
-                                    <label for="password">Password:</label><br>
-                                    <input type="password" name="" id="password">
-                                </div>
+                                <form action="">
+                                    <div class="email">
+                                        <label for="email">Email Adress:</label><br>
+                                        <input type="email" name="" id="email">
+                                    </div>
+                                    <div class="password">
+                                        <label for="password">Password:</label><br>
+                                        <input type="password" name="" id="password">
+                                    </div>
+                                    <div class="remember" style="display: flex; ">
+                                        <label style="color: #666;
+                                        cursor: pointer;
+                                        font-family: 'Rubik', sans-serif; margin-top: 10px;" for="password">Remember Me:</label><br>
+                                        <input type="checkbox" name="" id="password" style="margin-left: 10px; margin-top: 10px; ">
+                                    </div>
+                                </form>
                             </div>
                             <div class="forgotPassword">
                                 <p>Forgot your password?</p>
@@ -309,7 +317,7 @@
                                 </ul>
                             </div>
                             <div class="button">
-                                <a href="">
+                                <a href="./registration.html">
                                     CREATE ACCOUNT
                                 </a>
                             </div>
