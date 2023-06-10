@@ -158,6 +158,45 @@ body {
                     font-size: 14px;
                     font-family: 'Rubik', sans-serif;
                 }
+
+            }
+            ul{
+                display: none;
+                border: 1px solid #828282;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                position: absolute;
+                top: 123px;
+                left: 361px;
+                width: 490px;
+                padding: 15px;
+                z-index: 5000;
+                background-color: white;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        display: flex;
+
+                        align-items: center;
+                        justify-content: space-around;
+                        .other{
+                            
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            span{
+                                color: #666;
+                            }
+                        }
+                        .image{
+                            img{
+                                height: 80px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -601,6 +640,61 @@ body {
                 border-radius: 5px;
                 border: none;
             }
+
+            ul{
+                // display: none;
+                border: 1px solid #828282;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                position: absolute;
+                top: 123px;
+                left: 361px;
+                width: 490px;
+                padding: 15px;
+                z-index: 5000;
+                background-color: white;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        display: flex;
+
+                        align-items: center;
+                        justify-content: space-around;
+                        .other{
+                            
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            span{
+                                color: #666;
+                            }
+                        }
+                        .image{
+                            img{
+                                height: 80px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+            @media only screen and (max-width: 821px) {
+
+               ul{
+                top: 103px;
+                left: 47px;
+                width: 674px;
+               }
+             }
+             @media only screen and (max-width: 391px) {
+
+                ul{
+                    left: 18px;
+                    width: 353px;
+                }
+              }
+            
         }
     }
 }
@@ -948,7 +1042,13 @@ body {
                                     }
 
                                     .price {
-                                        span {
+                                        display: flex;
+                                        .discountPrice{
+                                            color: #999;
+                                            font-size: 14px;
+                                            text-decoration-line: line-through;
+                                        }
+                                        .RealPrice{ margin-left: 10px;
                                             color: #ff7e00;
                                         }
                                     }
@@ -1059,7 +1159,6 @@ body {
                 padding-top: 30px;
                 padding-bottom: 10px;
                 position: relative;
-
                 .prev_arrow {
                     color: white;
                     border-radius: 50px;
@@ -1081,7 +1180,6 @@ body {
                         background-color: #ff7e00;
                     }
                 }
-
                 .next_arrow {
                     cursor: pointer;
                     color: white;
@@ -1098,16 +1196,13 @@ body {
                     right: 1px;
                     z-index: 5;
                     font-size: 22px;
-
                     &:hover {
                         background-color: #ff7e00;
                     }
                 }
-
                 ul {
                     padding: 0;
                     margin: 0;
-
                     li {
                         list-style: none;
                         display: flex;
@@ -1123,16 +1218,17 @@ body {
                                 object-fit: contain;
                                 width: 270px;
                             }
+                            @media only screen and (max-width: 391px) {
+                                width: 44%;
+                            }
                         }
 
                         .textDeal {
                             font-family: 'Rubik', sans-serif;
-
                             .title {
                                 a {
                                     text-decoration: none;
                                     color: #333;
-
                                     h4 {
                                         font-size: 16px;
                                         transition: .4s;
@@ -1143,7 +1239,6 @@ body {
                                     }
                                 }
                             }
-
                             .textContent {
                                 padding-top: 10px;
                                 width: 425px;
@@ -1202,6 +1297,15 @@ body {
                                     }
                                 }
                             }
+                        }
+                        @media only screen and (max-width: 391px) {
+                        .textDeal {
+                            display: flex;
+                            justify-content: center;
+                            align-items: start;
+                            width: 44%;
+                            flex-direction: column;
+                            font-family: 'Rubik', sans-serif;
                         }
                     }
                 }
@@ -1611,6 +1715,7 @@ body {
             background-color: #ff7e00;
         }
     }
+}
 }
 
 footer {

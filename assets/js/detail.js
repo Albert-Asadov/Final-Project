@@ -79,8 +79,14 @@ $('.responsive').slick({
   var WishlistPanel = document.querySelector(".panelWish");
   var wishlistButton = document.querySelector(".wishlist");
 
-  wishlistButton.addEventListener("click",function(){
+  wishlistButton.addEventListener("click",function(e){
+    e.stopPropagation();
     WishlistPanel.style.display = "block";
+  })
+
+  window.addEventListener("click",function(e){
+    e.stopPropagation();
+    WishlistPanel.style.display = "none";
   })
 
 
@@ -116,14 +122,14 @@ function MainImageFunction(){
           Image.className = "images active"
         }
 
-        Image.onmouseover = function(){
-          [...FalseImages].forEach(falseImg =>{
-            falseImg.className = "images"
-          })
-          let src = Image.getAttribute("src");
-          MainImage.src = src;
-          Image.className = "images active"
-        }
+        // Image.onmouseover = function(){
+        //   [...FalseImages].forEach(falseImg =>{
+        //     falseImg.className = "images"
+        //   })
+        //   let src = Image.getAttribute("src");
+        //   MainImage.src = src;
+        //   Image.className = "images active"
+        // }
 
 
     })
@@ -213,4 +219,13 @@ window.addEventListener("scroll", function () {
   }
 });
 
+let up =document.querySelector(".up");
+up.onclick = function(e){
+  e.preventDefault();
+  window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+}
 

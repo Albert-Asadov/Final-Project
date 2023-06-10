@@ -96,7 +96,26 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="input">
+                            <form>
                             <input type="text" placeholder="Search the store">
+                            <ul>
+                                <li class="searchPanel" >
+                                    <a href="">
+                                        <div class="image">
+                                            <img  src="./assets/images/Product/20__64971.jpg" alt="@item.Name" class="js-prd-img lazyload fade-up">
+                                        </div>
+                                        <div class="other">
+                                            <span >
+                                                @item.Name
+                                            </span>
+                                            <span >
+                                                $@item.Price
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                             </form>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -166,6 +185,10 @@
                                                             1 x $800
                                                         </span>
                                                     </div>
+                                                </div>
+                                                <div class="iconDelete" style="font-size: 14px;
+                                                margin-left: 35px;color: #666;">
+                                                    <i class="fa-solid fa-trash"></i>
                                                 </div>
                                             </div>
                                         </li>
@@ -253,7 +276,26 @@
                 <div class="bottomRow">
                     <div class="col-12">
                         <div class="inputDiv">
-                            <input type="text" placeholder="Search the store">
+                            <form>
+                                <input type="text" placeholder="Search the store">
+                                <ul>
+                                    <li class="searchPanel" >
+                                        <a href="">
+                                            <div class="image">
+                                                <img  src="./assets/images/Product/20__64971.jpg" alt="@item.Name" class="js-prd-img lazyload fade-up">
+                                            </div>
+                                            <div class="other">
+                                                <span >
+                                                    @item.Name
+                                                </span>
+                                                <span >
+                                                    $@item.Price
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                 </form>
                         </div>
                     </div>
                 </div>
@@ -416,9 +458,14 @@
                                                         <div class="text">
                                                             <p>[Sample] Chemex Coffeemaker 3 Cup consetetur </p>
                                                         </div>
-                                                        <div class="price">
-                                                            <span>$49.50</span>
-                                                        </div>
+                                                       <div class="price">
+                                                            <div class="discountPrice">
+                                                                <span>$@item.Price</span>
+                                                            </div>
+                                                            <div class="RealPrice">
+                                                                <span>$@item.Price</span>
+                                                            </div>
+                                                       </div>
                                                     </div>
                                                 </a>
                                             </li>
@@ -686,12 +733,12 @@
                                 <div class="deals">
                                     <ul>
                                         <li>
-                                            <div class="image col-lg-5">
+                                            <div class="image col-lg-6">
                                                 <a href="">
                                                     <img src="./assets/images/Product/9__34422.jpg" alt="">
                                                 </a>
                                             </div>
-                                            <div class="textDeal col-lg-7">
+                                            <div class="textDeal col-lg-6">
                                                 <div class="title">
                                                     <a href="">
                                                         <h4>[Sample] Dustpan & Brush diam nonumy eirmod</h4>

@@ -80,42 +80,43 @@ $('.owl-carousel').owlCarousel({
 });
 
 $('.responsive').slick({
-    dots: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>',
-    prevArrow: '<i class="fa-solid fa-chevron-left prev_arrow"></i>',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>',
+  prevArrow: '<i class="fa-solid fa-chevron-left prev_arrow"></i>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+
+
+
 
   $('.review').slick({
     dots: false,
@@ -176,7 +177,7 @@ $('.responsive').slick({
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
@@ -270,6 +271,18 @@ $('.responsive').slick({
     ]
   });
 
+  // $('.responsive').on('init reInit afterChange', function(event, slick, currentSlide) {
+  //   var slideCount = slick.slideCount;
+  //   var slidesToShow = slick.options.slidesToShow;
+  //   var lastSlideIndex = slideCount - 1;
+  //   var currentLastSlideIndex = currentSlide + slidesToShow - 1;
+  
+  //   if (currentLastSlideIndex >= lastSlideIndex) {
+  //     $('.next_arrow').hide();
+  //   } else {
+  //     $('.next_arrow').show();
+  //   }
+  // });
 
   let up =document.querySelector(".up");
   up.onclick = function(e){
@@ -301,3 +314,4 @@ window.addEventListener("scroll", function () {
     i.style.opacity = "0";
   }
 });
+

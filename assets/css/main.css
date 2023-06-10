@@ -5098,7 +5098,16 @@ body {
 #detail .leftside .bestSellers .responsive div ul li a .text-price .text p:hover {
   color: #ff7e00;
 }
-#detail .leftside .bestSellers .responsive div ul li a .text-price .price span {
+#detail .leftside .bestSellers .responsive div ul li a .text-price .price {
+  display: flex;
+}
+#detail .leftside .bestSellers .responsive div ul li a .text-price .price .discountPrice {
+  color: #999;
+  font-size: 14px;
+  text-decoration-line: line-through;
+}
+#detail .leftside .bestSellers .responsive div ul li a .text-price .price .RealPrice {
+  margin-left: 10px;
   color: #ff7e00;
 }
 #detail .rightSide .mainDetail {
@@ -5109,6 +5118,11 @@ body {
 }
 #detail .rightSide .mainDetail .aboutProduct .photo .mainImage img {
   width: 520px;
+}
+@media only screen and (max-width: 391px) {
+  #detail .rightSide .mainDetail .aboutProduct .photo .mainImage img {
+    width: 348px;
+  }
 }
 #detail .rightSide .mainDetail .aboutProduct .photo .smallImages {
   display: flex;
@@ -5288,7 +5302,8 @@ body {
 #detail .rightSide .mainDetail .aboutProduct .titleMain .addToCard .addToCard {
   font-family: "Rubik", sans-serif;
   font-size: 13px;
-  padding-top: 11px;
+  padding-top: 0px;
+  border: none;
   border-radius: 25px;
   text-align: center;
   display: inline-block;
@@ -5360,6 +5375,32 @@ body {
 #detail .rightSide .mainDetail .aboutProduct .titleMain .addToCard .wishlist .panelWish .deleteFromWishlist a {
   text-decoration: none;
   color: #666;
+}
+@media only screen and (max-width: 821px) {
+  #detail .rightSide .mainDetail .aboutProduct .titleMain {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 391px) {
+  #detail .rightSide .mainDetail .aboutProduct .titleMain {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 821px) {
+  #detail .rightSide .mainDetail .aboutProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 391px) {
+  #detail .rightSide .mainDetail .aboutProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 #detail .rightSide .mainDetail .description {
   padding-top: 40px;
@@ -5537,10 +5578,58 @@ body {
   height: 3px;
   background-color: #ebebeb;
 }
-#detail .rightSide .mainDetail .reviews .main div p {
+#detail .rightSide .mainDetail .reviews .mainCommentContent {
+  height: 350px;
+  overflow-y: scroll;
+}
+#detail .rightSide .mainDetail .reviews .mainCommentContent .comments {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+}
+#detail .rightSide .mainDetail .reviews .mainCommentContent .comments .about {
+  display: flex;
+}
+#detail .rightSide .mainDetail .reviews .mainCommentContent .comments .about .name span {
+  color: #4f4f4f;
+}
+#detail .rightSide .mainDetail .reviews .mainCommentContent .comments .about .email {
+  margin-left: 15px;
+}
+#detail .rightSide .mainDetail .reviews .mainCommentContent .comments .about .email span {
+  color: #4f4f4f;
+}
+#detail .rightSide .mainDetail .reviews .mainCommentContent .comments div p {
   font-size: 15px;
   color: #666;
   font-family: "Rubik", sans-serif;
+}
+#detail .rightSide .mainDetail .reviews .mainCommentContent .comments div p .OrangeColor {
+  color: #ff7e00;
+}
+#detail .up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 85px;
+  bottom: 25px;
+  position: fixed;
+  padding-top: 12px;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #999;
+  color: #fff;
+  text-align: center;
+  transition: 0.4s;
+  z-index: 300;
+}
+#detail .up:hover {
+  background-color: #ff7e00;
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -7145,14 +7234,24 @@ footer .bottomLine .paymant ul li i {
 }
 .order .aboutUser .shippingInfo .text .descr {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 30px;
 }
-.order .aboutUser .shippingInfo .text .descr ul {
-  padding: 0;
-  margin: 0;
+.order .aboutUser .shippingInfo .text .descr .input input {
+  font-family: "Rubik", sans-serif;
+  height: 35px;
+  width: 100%;
 }
-.order .aboutUser .shippingInfo .text .descr ul li {
-  list-style: none;
+.order .aboutUser .shippingInfo .text .descr .input input::placeholder {
+  padding: 4px;
+}
+.order .aboutUser .shippingInfo .text .descr .input label {
+  color: #666;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.order .aboutUser .shippingInfo .text .descr .adress, .order .aboutUser .shippingInfo .text .descr .note {
+  margin-top: 20px;
 }
 .order .aboutUser .button {
   display: flex;
@@ -7176,7 +7275,7 @@ footer .bottomLine .paymant ul li i {
   font-family: "Rubik", sans-serif;
   margin: 0 auto;
   width: 400px;
-  height: 402px;
+  height: 442px;
   border: 1px solid #ddd;
 }
 .order .orderInfo .mainContent .title {
@@ -7214,6 +7313,12 @@ footer .bottomLine .paymant ul li i {
 .order .orderInfo .mainContent .main .content .product .image img {
   width: 75px;
 }
+.order .orderInfo .mainContent .main .content .product .text {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .order .orderInfo .mainContent .main .content .product .text p {
   padding: 0;
   margin: 0;
@@ -7226,21 +7331,34 @@ footer .bottomLine .paymant ul li i {
   font-size: 14px;
   color: #333;
 }
+@media only screen and (max-width: 821px) {
+  .order .orderInfo .mainContent .main .content .price {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 391px) {
+  .order .orderInfo .mainContent .main .content .price {
+    margin-left: 10px;
+  }
+}
 .order .orderInfo .mainContent .subtotal_And_Tax {
   border-bottom: 1px solid #ddd;
 }
-.order .orderInfo .mainContent .subtotal_And_Tax .subtotal, .order .orderInfo .mainContent .subtotal_And_Tax .tax {
+.order .orderInfo .mainContent .subtotal_And_Tax .subtotal,
+.order .orderInfo .mainContent .subtotal_And_Tax .tax {
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.order .orderInfo .mainContent .subtotal_And_Tax .subtotal h6, .order .orderInfo .mainContent .subtotal_And_Tax .tax h6 {
+.order .orderInfo .mainContent .subtotal_And_Tax .subtotal h6,
+.order .orderInfo .mainContent .subtotal_And_Tax .tax h6 {
   color: #333;
   font-size: 14px;
   font-weight: 600;
 }
 .order .orderInfo .mainContent .total {
+  height: 140px;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -7249,6 +7367,16 @@ footer .bottomLine .paymant ul li i {
 .order .orderInfo .mainContent .total h5 {
   font-size: 35px;
   font-weight: 700;
+}
+@media only screen and (max-width: 821px) {
+  .order .orderInfo .mainContent {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 391px) {
+  .order .orderInfo .mainContent {
+    width: 100%;
+  }
 }
 
 footer {
@@ -9433,8 +9561,20 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 15px;
 }
 #shop .rightSide .mainContent .product .text .price {
-  font-family: "Rubik", sans-serif;
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop .rightSide .mainContent .product .text .price .discountPrice {
+  font-family: "Rubik", sans-serif;
+  color: #999;
+  font-size: 14px;
+  text-decoration-line: line-through;
+}
+#shop .rightSide .mainContent .product .text .price .realPrice {
+  font-family: "Rubik", sans-serif;
+  margin-left: 10px;
   font-size: 16px;
   color: #ff7e00;
 }
@@ -9741,6 +9881,40 @@ body {
   padding-left: 30px;
   font-size: 14px;
   font-family: "Rubik", sans-serif;
+}
+#MainHeader .middle .input ul {
+  display: none;
+  border: 1px solid #828282;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 123px;
+  left: 361px;
+  width: 490px;
+  padding: 15px;
+  z-index: 5000;
+  background-color: white;
+}
+#MainHeader .middle .input ul li {
+  list-style: none;
+}
+#MainHeader .middle .input ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#MainHeader .middle .input ul li a .other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#MainHeader .middle .input ul li a .other span {
+  color: #666;
+}
+#MainHeader .middle .input ul li a .image img {
+  height: 80px;
+  width: 80px;
 }
 #MainHeader .middle .icons {
   display: flex;
@@ -10110,6 +10284,52 @@ body {
   border-radius: 5px;
   border: none;
 }
+#secondaryHeader .bottomRow .inputDiv ul {
+  border: 1px solid #828282;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 123px;
+  left: 361px;
+  width: 490px;
+  padding: 15px;
+  z-index: 5000;
+  background-color: white;
+}
+#secondaryHeader .bottomRow .inputDiv ul li {
+  list-style: none;
+}
+#secondaryHeader .bottomRow .inputDiv ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#secondaryHeader .bottomRow .inputDiv ul li a .other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#secondaryHeader .bottomRow .inputDiv ul li a .other span {
+  color: #666;
+}
+#secondaryHeader .bottomRow .inputDiv ul li a .image img {
+  height: 80px;
+  width: 80px;
+}
+@media only screen and (max-width: 821px) {
+  #secondaryHeader .bottomRow .inputDiv ul {
+    top: 103px;
+    left: 47px;
+    width: 674px;
+  }
+}
+@media only screen and (max-width: 391px) {
+  #secondaryHeader .bottomRow .inputDiv ul {
+    left: 18px;
+    width: 353px;
+  }
+}
 
 #slider {
   margin-top: 20px;
@@ -10422,8 +10642,19 @@ body {
 #main .leftSide .newProduct .responsive div ul li a .text-price .text p:hover {
   color: #ff7e00;
 }
-#main .leftSide .bestSellers .responsive div ul li a .text-price .price span,
-#main .leftSide .newProduct .responsive div ul li a .text-price .price span {
+#main .leftSide .bestSellers .responsive div ul li a .text-price .price,
+#main .leftSide .newProduct .responsive div ul li a .text-price .price {
+  display: flex;
+}
+#main .leftSide .bestSellers .responsive div ul li a .text-price .price .discountPrice,
+#main .leftSide .newProduct .responsive div ul li a .text-price .price .discountPrice {
+  color: #999;
+  font-size: 14px;
+  text-decoration-line: line-through;
+}
+#main .leftSide .bestSellers .responsive div ul li a .text-price .price .RealPrice,
+#main .leftSide .newProduct .responsive div ul li a .text-price .price .RealPrice {
+  margin-left: 10px;
   color: #ff7e00;
 }
 #main .leftSide .advertisingWatch {
@@ -10562,6 +10793,11 @@ body {
   object-fit: contain;
   width: 270px;
 }
+@media only screen and (max-width: 391px) {
+  #main .rightSide .mainContent .deals ul li .image {
+    width: 44%;
+  }
+}
 #main .rightSide .mainContent .deals ul li .textDeal {
   font-family: "Rubik", sans-serif;
 }
@@ -10626,43 +10862,53 @@ body {
   background-color: #ff7e00;
   color: white;
 }
-#main .rightSide .mainContent .productFirst,
-#main .rightSide .mainContent .productSecond {
+@media only screen and (max-width: 391px) {
+  #main .rightSide .mainContent .deals ul li .textDeal {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 44%;
+    flex-direction: column;
+    font-family: "Rubik", sans-serif;
+  }
+}
+#main .rightSide .mainContent .deals .productFirst,
+#main .rightSide .mainContent .deals .productSecond {
   padding-top: 10px;
 }
-#main .rightSide .mainContent .productFirst .title .upperLine,
-#main .rightSide .mainContent .productSecond .title .upperLine {
+#main .rightSide .mainContent .deals .productFirst .title .upperLine,
+#main .rightSide .mainContent .deals .productSecond .title .upperLine {
   font-family: "Rubik", sans-serif;
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#main .rightSide .mainContent .productFirst .title .upperLine ul,
-#main .rightSide .mainContent .productSecond .title .upperLine ul {
+#main .rightSide .mainContent .deals .productFirst .title .upperLine ul,
+#main .rightSide .mainContent .deals .productSecond .title .upperLine ul {
   display: flex;
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .productFirst .title .upperLine ul li,
-#main .rightSide .mainContent .productSecond .title .upperLine ul li {
+#main .rightSide .mainContent .deals .productFirst .title .upperLine ul li,
+#main .rightSide .mainContent .deals .productSecond .title .upperLine ul li {
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   margin-right: 20px;
   list-style: none;
 }
-#main .rightSide .mainContent .productFirst .title .upperLine ul li a,
-#main .rightSide .mainContent .productSecond .title .upperLine ul li a {
+#main .rightSide .mainContent .deals .productFirst .title .upperLine ul li a,
+#main .rightSide .mainContent .deals .productSecond .title .upperLine ul li a {
   font-family: "Rubik", sans-serif;
   color: #93979c;
   text-decoration: none;
 }
-#main .rightSide .mainContent .productFirst .products,
-#main .rightSide .mainContent .productSecond .products {
+#main .rightSide .mainContent .deals .productFirst .products,
+#main .rightSide .mainContent .deals .productSecond .products {
   position: relative;
 }
-#main .rightSide .mainContent .productFirst .products .prev_arrow,
-#main .rightSide .mainContent .productSecond .products .prev_arrow {
+#main .rightSide .mainContent .deals .productFirst .products .prev_arrow,
+#main .rightSide .mainContent .deals .productSecond .products .prev_arrow {
   color: white;
   border-radius: 50px;
   padding-top: 10px;
@@ -10679,12 +10925,12 @@ body {
   z-index: 5;
   cursor: pointer;
 }
-#main .rightSide .mainContent .productFirst .products .prev_arrow:hover,
-#main .rightSide .mainContent .productSecond .products .prev_arrow:hover {
+#main .rightSide .mainContent .deals .productFirst .products .prev_arrow:hover,
+#main .rightSide .mainContent .deals .productSecond .products .prev_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .productFirst .products .next_arrow,
-#main .rightSide .mainContent .productSecond .products .next_arrow {
+#main .rightSide .mainContent .deals .productFirst .products .next_arrow,
+#main .rightSide .mainContent .deals .productSecond .products .next_arrow {
   cursor: pointer;
   color: white;
   border: 1px solid #e6e6e6;
@@ -10701,40 +10947,40 @@ body {
   z-index: 5;
   font-size: 22px;
 }
-#main .rightSide .mainContent .productFirst .products .next_arrow:hover,
-#main .rightSide .mainContent .productSecond .products .next_arrow:hover {
+#main .rightSide .mainContent .deals .productFirst .products .next_arrow:hover,
+#main .rightSide .mainContent .deals .productSecond .products .next_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .productFirst .products ul,
-#main .rightSide .mainContent .productSecond .products ul {
+#main .rightSide .mainContent .deals .productFirst .products ul,
+#main .rightSide .mainContent .deals .productSecond .products ul {
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .productFirst .products ul li,
-#main .rightSide .mainContent .productSecond .products ul li {
+#main .rightSide .mainContent .deals .productFirst .products ul li,
+#main .rightSide .mainContent .deals .productSecond .products ul li {
   border-right: 1px solid #ebebeb;
   list-style: none;
 }
-#main .rightSide .mainContent .productFirst .products ul li .image a,
-#main .rightSide .mainContent .productSecond .products ul li .image a {
+#main .rightSide .mainContent .deals .productFirst .products ul li .image a,
+#main .rightSide .mainContent .deals .productSecond .products ul li .image a {
   text-decoration: none;
 }
-#main .rightSide .mainContent .productFirst .products ul li .image a img,
-#main .rightSide .mainContent .productSecond .products ul li .image a img {
+#main .rightSide .mainContent .deals .productFirst .products ul li .image a img,
+#main .rightSide .mainContent .deals .productSecond .products ul li .image a img {
   width: 240px;
   margin: 0 auto;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text,
-#main .rightSide .mainContent .productSecond .products ul li .text {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text {
   font-family: "Rubik", sans-serif;
   text-align: center;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text:hover .addToCard,
-#main .rightSide .mainContent .productSecond .products ul li .text:hover .addToCard {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text:hover .addToCard,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text:hover .addToCard {
   display: block;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .brand,
-#main .rightSide .mainContent .productSecond .products ul li .text .brand {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text .brand,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text .brand {
   font-family: "Rubik", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -10742,38 +10988,38 @@ body {
   font-size: 12px;
   color: #999;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .name,
-#main .rightSide .mainContent .productSecond .products ul li .text .name {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text .name,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text .name {
   font-family: "Rubik", sans-serif;
   color: #4f4f4f;
   font-size: 15px;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .price,
-#main .rightSide .mainContent .productSecond .products ul li .text .price {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text .price,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text .price {
   font-family: "Rubik", sans-serif;
   margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .price .discountPrice,
-#main .rightSide .mainContent .productSecond .products ul li .text .price .discountPrice {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text .price .discountPrice,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text .price .discountPrice {
   color: #999;
   font-size: 14px;
   text-decoration-line: line-through;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .price .realPrice,
-#main .rightSide .mainContent .productSecond .products ul li .text .price .realPrice {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text .price .realPrice,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text .price .realPrice {
   margin-left: 10px;
   font-size: 16px;
   color: #ff7e00;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .addToCard,
-#main .rightSide .mainContent .productSecond .products ul li .text .addToCard {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text .addToCard,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text .addToCard {
   display: none;
 }
-#main .rightSide .mainContent .productFirst .products ul li .text .addToCard a,
-#main .rightSide .mainContent .productSecond .products ul li .text .addToCard a {
+#main .rightSide .mainContent .deals .productFirst .products ul li .text .addToCard a,
+#main .rightSide .mainContent .deals .productSecond .products ul li .text .addToCard a {
   padding-top: 2px;
   border-radius: 20px;
   height: 30px;
@@ -10783,111 +11029,111 @@ body {
   color: white;
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .adverstingMainPage {
+#main .rightSide .mainContent .deals .adverstingMainPage {
   padding-top: 40px;
   padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
 }
-#main .rightSide .mainContent .adverstingMainPage .firstImage img {
+#main .rightSide .mainContent .deals .adverstingMainPage .firstImage img {
   object-fit: contain;
   width: 97%;
 }
-#main .rightSide .mainContent .adverstingMainPage .secondImage {
+#main .rightSide .mainContent .deals .adverstingMainPage .secondImage {
   text-align: end;
 }
-#main .rightSide .mainContent .adverstingMainPage .secondImage img {
+#main .rightSide .mainContent .deals .adverstingMainPage .secondImage img {
   object-fit: contain;
   width: 97%;
 }
 @media only screen and (max-width: 821px) {
-  #main .rightSide .mainContent .firstImage {
+  #main .rightSide .mainContent .deals .firstImage {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  #main .rightSide .mainContent .firstImage img {
+  #main .rightSide .mainContent .deals .firstImage img {
     margin: 0 auto;
   }
-  #main .rightSide .mainContent .secondImage {
+  #main .rightSide .mainContent .deals .secondImage {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
     text-align: center;
   }
-  #main .rightSide .mainContent .secondImage img {
+  #main .rightSide .mainContent .deals .secondImage img {
     margin: 0 auto;
   }
 }
-#main .rightSide .mainContent .adverstingMainPageSecond {
+#main .rightSide .mainContent .deals .adverstingMainPageSecond {
   padding-top: 40px;
   padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
 }
-#main .rightSide .mainContent .adverstingMainPageSecond .firstImage img {
+#main .rightSide .mainContent .deals .adverstingMainPageSecond .firstImage img {
   object-fit: contain;
   width: 97%;
 }
-#main .rightSide .mainContent .adverstingMainPageSecond .secondImage {
+#main .rightSide .mainContent .deals .adverstingMainPageSecond .secondImage {
   text-align: end;
 }
-#main .rightSide .mainContent .adverstingMainPageSecond .secondImage img {
+#main .rightSide .mainContent .deals .adverstingMainPageSecond .secondImage img {
   object-fit: contain;
   width: 97%;
 }
-#main .rightSide .mainContent .category .all,
-#main .rightSide .mainContent .categoryForMD .all {
+#main .rightSide .mainContent .deals .category .all,
+#main .rightSide .mainContent .deals .categoryForMD .all {
   display: flex;
   flex-wrap: wrap;
 }
-#main .rightSide .mainContent .category .all .categSearch,
-#main .rightSide .mainContent .categoryForMD .all .categSearch {
+#main .rightSide .mainContent .deals .category .all .categSearch,
+#main .rightSide .mainContent .deals .categoryForMD .all .categSearch {
   font-size: 14px;
 }
-#main .rightSide .mainContent .category .all .categSearch .image img,
-#main .rightSide .mainContent .categoryForMD .all .categSearch .image img {
+#main .rightSide .mainContent .deals .category .all .categSearch .image img,
+#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .image img {
   object-fit: contain;
   width: 73%;
 }
-#main .rightSide .mainContent .category .all .categSearch .title,
-#main .rightSide .mainContent .categoryForMD .all .categSearch .title {
+#main .rightSide .mainContent .deals .category .all .categSearch .title,
+#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .title {
   margin-top: 15px;
   font-size: 12px;
   transition: 0.4s;
 }
-#main .rightSide .mainContent .category .all .categSearch .title:hover,
-#main .rightSide .mainContent .categoryForMD .all .categSearch .title:hover {
+#main .rightSide .mainContent .deals .category .all .categSearch .title:hover,
+#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .title:hover {
   color: #ff7e00;
 }
-#main .rightSide .mainContent .category .all .categSearch .cat ul,
-#main .rightSide .mainContent .categoryForMD .all .categSearch .cat ul {
+#main .rightSide .mainContent .deals .category .all .categSearch .cat ul,
+#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .cat ul {
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .category .all .categSearch .cat ul li,
-#main .rightSide .mainContent .categoryForMD .all .categSearch .cat ul li {
+#main .rightSide .mainContent .deals .category .all .categSearch .cat ul li,
+#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .cat ul li {
   margin-top: 10px;
   list-style: none;
 }
-#main .rightSide .mainContent .category .all .categSearch .cat ul li a,
-#main .rightSide .mainContent .categoryForMD .all .categSearch .cat ul li a {
+#main .rightSide .mainContent .deals .category .all .categSearch .cat ul li a,
+#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .cat ul li a {
   text-decoration: none;
   color: #4f4f4f;
   transition: 0.4s;
 }
-#main .rightSide .mainContent .category .all .categSearch .cat ul li a:hover,
-#main .rightSide .mainContent .categoryForMD .all .categSearch .cat ul li a:hover {
+#main .rightSide .mainContent .deals .category .all .categSearch .cat ul li a:hover,
+#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .cat ul li a:hover {
   color: #ff7e00;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .prev_arrow {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .prev_arrow {
   color: white;
   border-radius: 50px;
   padding-top: 10px;
@@ -10904,10 +11150,10 @@ body {
   z-index: 5;
   cursor: pointer;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .prev_arrow:hover {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .prev_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .next_arrow {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .next_arrow {
   cursor: pointer;
   color: white;
   border: 1px solid #e6e6e6;
@@ -10924,46 +11170,46 @@ body {
   z-index: 5;
   font-size: 22px;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .next_arrow:hover {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .next_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .categSearch {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 14px;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .image img {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .image img {
   object-fit: contain;
   width: 190px;
   margin: 0 auto;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .title {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .title {
   margin-top: 15px;
   font-size: 12px;
   transition: 0.4s;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .title:hover {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .title:hover {
   color: #ff7e00;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .cat ul {
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul li {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .cat ul li {
   margin-top: 10px;
   list-style: none;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul li a {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .cat ul li a {
   text-decoration: none;
   color: #4f4f4f;
   transition: 0.4s;
 }
-#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul li a:hover {
+#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .cat ul li a:hover {
   color: #ff7e00;
 }
-#main .up {
+#main .rightSide .up {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10983,7 +11229,7 @@ body {
   transition: 0.4s;
   z-index: 300;
 }
-#main .up:hover {
+#main .rightSide .up:hover {
   background-color: #ff7e00;
 }
 
