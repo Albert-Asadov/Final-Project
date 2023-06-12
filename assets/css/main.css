@@ -10872,43 +10872,43 @@ body {
     font-family: "Rubik", sans-serif;
   }
 }
-#main .rightSide .mainContent .deals .productFirst,
-#main .rightSide .mainContent .deals .productSecond {
+#main .rightSide .mainContent .productFirst,
+#main .rightSide .mainContent .productSecond {
   padding-top: 10px;
 }
-#main .rightSide .mainContent .deals .productFirst .title .upperLine,
-#main .rightSide .mainContent .deals .productSecond .title .upperLine {
+#main .rightSide .mainContent .productFirst .title .upperLine,
+#main .rightSide .mainContent .productSecond .title .upperLine {
   font-family: "Rubik", sans-serif;
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#main .rightSide .mainContent .deals .productFirst .title .upperLine ul,
-#main .rightSide .mainContent .deals .productSecond .title .upperLine ul {
+#main .rightSide .mainContent .productFirst .title .upperLine ul,
+#main .rightSide .mainContent .productSecond .title .upperLine ul {
   display: flex;
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .deals .productFirst .title .upperLine ul li,
-#main .rightSide .mainContent .deals .productSecond .title .upperLine ul li {
+#main .rightSide .mainContent .productFirst .title .upperLine ul li,
+#main .rightSide .mainContent .productSecond .title .upperLine ul li {
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   margin-right: 20px;
   list-style: none;
 }
-#main .rightSide .mainContent .deals .productFirst .title .upperLine ul li a,
-#main .rightSide .mainContent .deals .productSecond .title .upperLine ul li a {
+#main .rightSide .mainContent .productFirst .title .upperLine ul li a,
+#main .rightSide .mainContent .productSecond .title .upperLine ul li a {
   font-family: "Rubik", sans-serif;
   color: #93979c;
   text-decoration: none;
 }
-#main .rightSide .mainContent .deals .productFirst .products,
-#main .rightSide .mainContent .deals .productSecond .products {
+#main .rightSide .mainContent .productFirst .products,
+#main .rightSide .mainContent .productSecond .products {
   position: relative;
 }
-#main .rightSide .mainContent .deals .productFirst .products .prev_arrow,
-#main .rightSide .mainContent .deals .productSecond .products .prev_arrow {
+#main .rightSide .mainContent .productFirst .products .prev_arrow,
+#main .rightSide .mainContent .productSecond .products .prev_arrow {
   color: white;
   border-radius: 50px;
   padding-top: 10px;
@@ -10925,12 +10925,12 @@ body {
   z-index: 5;
   cursor: pointer;
 }
-#main .rightSide .mainContent .deals .productFirst .products .prev_arrow:hover,
-#main .rightSide .mainContent .deals .productSecond .products .prev_arrow:hover {
+#main .rightSide .mainContent .productFirst .products .prev_arrow:hover,
+#main .rightSide .mainContent .productSecond .products .prev_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .productFirst .products .next_arrow,
-#main .rightSide .mainContent .deals .productSecond .products .next_arrow {
+#main .rightSide .mainContent .productFirst .products .next_arrow,
+#main .rightSide .mainContent .productSecond .products .next_arrow {
   cursor: pointer;
   color: white;
   border: 1px solid #e6e6e6;
@@ -10947,40 +10947,40 @@ body {
   z-index: 5;
   font-size: 22px;
 }
-#main .rightSide .mainContent .deals .productFirst .products .next_arrow:hover,
-#main .rightSide .mainContent .deals .productSecond .products .next_arrow:hover {
+#main .rightSide .mainContent .productFirst .products .next_arrow:hover,
+#main .rightSide .mainContent .productSecond .products .next_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul,
-#main .rightSide .mainContent .deals .productSecond .products ul {
+#main .rightSide .mainContent .productFirst .products ul,
+#main .rightSide .mainContent .productSecond .products ul {
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li,
-#main .rightSide .mainContent .deals .productSecond .products ul li {
+#main .rightSide .mainContent .productFirst .products ul li,
+#main .rightSide .mainContent .productSecond .products ul li {
   border-right: 1px solid #ebebeb;
   list-style: none;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .image a,
-#main .rightSide .mainContent .deals .productSecond .products ul li .image a {
+#main .rightSide .mainContent .productFirst .products ul li .image a,
+#main .rightSide .mainContent .productSecond .products ul li .image a {
   text-decoration: none;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .image a img,
-#main .rightSide .mainContent .deals .productSecond .products ul li .image a img {
+#main .rightSide .mainContent .productFirst .products ul li .image a img,
+#main .rightSide .mainContent .productSecond .products ul li .image a img {
   width: 240px;
   margin: 0 auto;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text {
+#main .rightSide .mainContent .productFirst .products ul li .text,
+#main .rightSide .mainContent .productSecond .products ul li .text {
   font-family: "Rubik", sans-serif;
   text-align: center;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text:hover .addToCard,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text:hover .addToCard {
+#main .rightSide .mainContent .productFirst .products ul li .text:hover .addToCard,
+#main .rightSide .mainContent .productSecond .products ul li .text:hover .addToCard {
   display: block;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text .brand,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text .brand {
+#main .rightSide .mainContent .productFirst .products ul li .text .brand,
+#main .rightSide .mainContent .productSecond .products ul li .text .brand {
   font-family: "Rubik", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -10988,38 +10988,38 @@ body {
   font-size: 12px;
   color: #999;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text .name,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text .name {
+#main .rightSide .mainContent .productFirst .products ul li .text .name,
+#main .rightSide .mainContent .productSecond .products ul li .text .name {
   font-family: "Rubik", sans-serif;
   color: #4f4f4f;
   font-size: 15px;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text .price,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text .price {
+#main .rightSide .mainContent .productFirst .products ul li .text .price,
+#main .rightSide .mainContent .productSecond .products ul li .text .price {
   font-family: "Rubik", sans-serif;
   margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text .price .discountPrice,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text .price .discountPrice {
+#main .rightSide .mainContent .productFirst .products ul li .text .price .discountPrice,
+#main .rightSide .mainContent .productSecond .products ul li .text .price .discountPrice {
   color: #999;
   font-size: 14px;
   text-decoration-line: line-through;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text .price .realPrice,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text .price .realPrice {
+#main .rightSide .mainContent .productFirst .products ul li .text .price .realPrice,
+#main .rightSide .mainContent .productSecond .products ul li .text .price .realPrice {
   margin-left: 10px;
   font-size: 16px;
   color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text .addToCard,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text .addToCard {
+#main .rightSide .mainContent .productFirst .products ul li .text .addToCard,
+#main .rightSide .mainContent .productSecond .products ul li .text .addToCard {
   display: none;
 }
-#main .rightSide .mainContent .deals .productFirst .products ul li .text .addToCard a,
-#main .rightSide .mainContent .deals .productSecond .products ul li .text .addToCard a {
+#main .rightSide .mainContent .productFirst .products ul li .text .addToCard a,
+#main .rightSide .mainContent .productSecond .products ul li .text .addToCard a {
   padding-top: 2px;
   border-radius: 20px;
   height: 30px;
@@ -11029,111 +11029,111 @@ body {
   color: white;
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .adverstingMainPage {
+#main .rightSide .mainContent .adverstingMainPage {
   padding-top: 40px;
   padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
 }
-#main .rightSide .mainContent .deals .adverstingMainPage .firstImage img {
+#main .rightSide .mainContent .adverstingMainPage .firstImage img {
   object-fit: contain;
   width: 97%;
 }
-#main .rightSide .mainContent .deals .adverstingMainPage .secondImage {
+#main .rightSide .mainContent .adverstingMainPage .secondImage {
   text-align: end;
 }
-#main .rightSide .mainContent .deals .adverstingMainPage .secondImage img {
+#main .rightSide .mainContent .adverstingMainPage .secondImage img {
   object-fit: contain;
   width: 97%;
 }
 @media only screen and (max-width: 821px) {
-  #main .rightSide .mainContent .deals .firstImage {
+  #main .rightSide .mainContent .firstImage {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  #main .rightSide .mainContent .deals .firstImage img {
+  #main .rightSide .mainContent .firstImage img {
     margin: 0 auto;
   }
-  #main .rightSide .mainContent .deals .secondImage {
+  #main .rightSide .mainContent .secondImage {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
     text-align: center;
   }
-  #main .rightSide .mainContent .deals .secondImage img {
+  #main .rightSide .mainContent .secondImage img {
     margin: 0 auto;
   }
 }
-#main .rightSide .mainContent .deals .adverstingMainPageSecond {
+#main .rightSide .mainContent .adverstingMainPageSecond {
   padding-top: 40px;
   padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
 }
-#main .rightSide .mainContent .deals .adverstingMainPageSecond .firstImage img {
+#main .rightSide .mainContent .adverstingMainPageSecond .firstImage img {
   object-fit: contain;
   width: 97%;
 }
-#main .rightSide .mainContent .deals .adverstingMainPageSecond .secondImage {
+#main .rightSide .mainContent .adverstingMainPageSecond .secondImage {
   text-align: end;
 }
-#main .rightSide .mainContent .deals .adverstingMainPageSecond .secondImage img {
+#main .rightSide .mainContent .adverstingMainPageSecond .secondImage img {
   object-fit: contain;
   width: 97%;
 }
-#main .rightSide .mainContent .deals .category .all,
-#main .rightSide .mainContent .deals .categoryForMD .all {
+#main .rightSide .mainContent .category .all,
+#main .rightSide .mainContent .categoryForMD .all {
   display: flex;
   flex-wrap: wrap;
 }
-#main .rightSide .mainContent .deals .category .all .categSearch,
-#main .rightSide .mainContent .deals .categoryForMD .all .categSearch {
+#main .rightSide .mainContent .category .all .categSearch,
+#main .rightSide .mainContent .categoryForMD .all .categSearch {
   font-size: 14px;
 }
-#main .rightSide .mainContent .deals .category .all .categSearch .image img,
-#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .image img {
+#main .rightSide .mainContent .category .all .categSearch .image img,
+#main .rightSide .mainContent .categoryForMD .all .categSearch .image img {
   object-fit: contain;
   width: 73%;
 }
-#main .rightSide .mainContent .deals .category .all .categSearch .title,
-#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .title {
+#main .rightSide .mainContent .category .all .categSearch .title,
+#main .rightSide .mainContent .categoryForMD .all .categSearch .title {
   margin-top: 15px;
   font-size: 12px;
   transition: 0.4s;
 }
-#main .rightSide .mainContent .deals .category .all .categSearch .title:hover,
-#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .title:hover {
+#main .rightSide .mainContent .category .all .categSearch .title:hover,
+#main .rightSide .mainContent .categoryForMD .all .categSearch .title:hover {
   color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .category .all .categSearch .cat ul,
-#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .cat ul {
+#main .rightSide .mainContent .category .all .categSearch .cat ul,
+#main .rightSide .mainContent .categoryForMD .all .categSearch .cat ul {
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .deals .category .all .categSearch .cat ul li,
-#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .cat ul li {
+#main .rightSide .mainContent .category .all .categSearch .cat ul li,
+#main .rightSide .mainContent .categoryForMD .all .categSearch .cat ul li {
   margin-top: 10px;
   list-style: none;
 }
-#main .rightSide .mainContent .deals .category .all .categSearch .cat ul li a,
-#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .cat ul li a {
+#main .rightSide .mainContent .category .all .categSearch .cat ul li a,
+#main .rightSide .mainContent .categoryForMD .all .categSearch .cat ul li a {
   text-decoration: none;
   color: #4f4f4f;
   transition: 0.4s;
 }
-#main .rightSide .mainContent .deals .category .all .categSearch .cat ul li a:hover,
-#main .rightSide .mainContent .deals .categoryForMD .all .categSearch .cat ul li a:hover {
+#main .rightSide .mainContent .category .all .categSearch .cat ul li a:hover,
+#main .rightSide .mainContent .categoryForMD .all .categSearch .cat ul li a:hover {
   color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd {
+#main .rightSide .mainContent .categoryForMD .allForMd {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .prev_arrow {
+#main .rightSide .mainContent .categoryForMD .allForMd .prev_arrow {
   color: white;
   border-radius: 50px;
   padding-top: 10px;
@@ -11150,10 +11150,10 @@ body {
   z-index: 5;
   cursor: pointer;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .prev_arrow:hover {
+#main .rightSide .mainContent .categoryForMD .allForMd .prev_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .next_arrow {
+#main .rightSide .mainContent .categoryForMD .allForMd .next_arrow {
   cursor: pointer;
   color: white;
   border: 1px solid #e6e6e6;
@@ -11170,46 +11170,46 @@ body {
   z-index: 5;
   font-size: 22px;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .next_arrow:hover {
+#main .rightSide .mainContent .categoryForMD .allForMd .next_arrow:hover {
   background-color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch {
+#main .rightSide .mainContent .categoryForMD .allForMd .categSearch {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 14px;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .image img {
+#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .image img {
   object-fit: contain;
   width: 190px;
   margin: 0 auto;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .title {
+#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .title {
   margin-top: 15px;
   font-size: 12px;
   transition: 0.4s;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .title:hover {
+#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .title:hover {
   color: #ff7e00;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .cat ul {
+#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul {
   padding: 0;
   margin: 0;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .cat ul li {
+#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul li {
   margin-top: 10px;
   list-style: none;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .cat ul li a {
+#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul li a {
   text-decoration: none;
   color: #4f4f4f;
   transition: 0.4s;
 }
-#main .rightSide .mainContent .deals .categoryForMD .allForMd .categSearch .cat ul li a:hover {
+#main .rightSide .mainContent .categoryForMD .allForMd .categSearch .cat ul li a:hover {
   color: #ff7e00;
 }
-#main .rightSide .up {
+#main .up {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11229,7 +11229,7 @@ body {
   transition: 0.4s;
   z-index: 300;
 }
-#main .rightSide .up:hover {
+#main .up:hover {
   background-color: #ff7e00;
 }
 

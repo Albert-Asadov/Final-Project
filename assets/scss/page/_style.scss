@@ -160,7 +160,8 @@ body {
                 }
 
             }
-            ul{
+
+            ul {
                 display: none;
                 border: 1px solid #828282;
                 border-bottom-left-radius: 20px;
@@ -172,25 +173,30 @@ body {
                 padding: 15px;
                 z-index: 5000;
                 background-color: white;
-                li{
+
+                li {
                     list-style: none;
-                    a{
+
+                    a {
                         text-decoration: none;
                         display: flex;
 
                         align-items: center;
                         justify-content: space-around;
-                        .other{
-                            
+
+                        .other {
+
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-                            span{
+
+                            span {
                                 color: #666;
                             }
                         }
-                        .image{
-                            img{
+
+                        .image {
+                            img {
                                 height: 80px;
                                 width: 80px;
                             }
@@ -241,10 +247,12 @@ body {
                     ul {
                         padding-left: 15px;
                         font-size: 14px;
+
                         li {
                             display: block;
                             list-style: none;
                             padding-top: 5px;
+
                             a {
                                 color: #666;
                                 text-decoration: none;
@@ -564,28 +572,32 @@ body {
     align-items: center;
     flex-direction: column;
 
-    .hamburgerMenu{
+    .hamburgerMenu {
         border-bottom: 1px solid #8f8f8f;
         position: absolute;
-        top:53px;
+        top: 53px;
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: white;
         width: 100%;
         z-index: 300000;
-        ul{
+
+        ul {
             padding: 0;
             margin: 0;
-            li{
+
+            li {
                 margin-top: 15px;
                 list-style: none;
-                a{
+
+                a {
                     text-decoration: none;
                     color: #666;
                 }
             }
         }
     }
+
     .upperRow {
         display: flex;
         justify-content: center;
@@ -601,7 +613,7 @@ body {
 
         .menu {
             text-align: start;
-            
+
         }
 
         .basketIcon {
@@ -641,7 +653,7 @@ body {
                 border: none;
             }
 
-            ul{
+            ul {
                 // display: none;
                 border: 1px solid #828282;
                 border-bottom-left-radius: 20px;
@@ -653,25 +665,30 @@ body {
                 padding: 15px;
                 z-index: 5000;
                 background-color: white;
-                li{
+
+                li {
                     list-style: none;
-                    a{
+
+                    a {
                         text-decoration: none;
                         display: flex;
 
                         align-items: center;
                         justify-content: space-around;
-                        .other{
-                            
+
+                        .other {
+
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-                            span{
+
+                            span {
                                 color: #666;
                             }
                         }
-                        .image{
-                            img{
+
+                        .image {
+                            img {
                                 height: 80px;
                                 width: 80px;
                             }
@@ -679,22 +696,24 @@ body {
                     }
                 }
             }
+
             @media only screen and (max-width: 821px) {
 
-               ul{
-                top: 103px;
-                left: 47px;
-                width: 674px;
-               }
-             }
-             @media only screen and (max-width: 391px) {
+                ul {
+                    top: 103px;
+                    left: 47px;
+                    width: 674px;
+                }
+            }
 
-                ul{
+            @media only screen and (max-width: 391px) {
+
+                ul {
                     left: 18px;
                     width: 353px;
                 }
-              }
-            
+            }
+
         }
     }
 }
@@ -708,6 +727,7 @@ body {
         .owl-carousel {
             .owl-stage-outer {
                 height: 520px;
+
                 .owl-stage {
                     .owl-item {
                         .item {
@@ -720,18 +740,20 @@ body {
                     }
                 }
             }
+
             @media only screen and (max-width: 821px) {
 
-                .owl-stage-outer{
+                .owl-stage-outer {
                     height: 368px;
                 }
-             }
-             @media only screen and (max-width: 391px) {
+            }
 
-                .owl-stage-outer{
+            @media only screen and (max-width: 391px) {
+
+                .owl-stage-outer {
                     height: 198px;
                 }
-             }
+            }
 
             .owl-nav {
                 .owl-prev {
@@ -802,7 +824,7 @@ body {
             img {
                 width: 100%;
                 height: 160px;
-               
+
             }
         }
 
@@ -811,11 +833,12 @@ body {
             margin-top: 20px;
         }
     }
+
     @media only screen and (max-width: 821px) {
 
-       .advertising{
-        padding-top: 15px;
-       }
+        .advertising {
+            padding-top: 15px;
+        }
     }
 
     @media only screen and (max-width: 821px) {
@@ -1043,12 +1066,15 @@ body {
 
                                     .price {
                                         display: flex;
-                                        .discountPrice{
+
+                                        .discountPrice {
                                             color: #999;
                                             font-size: 14px;
                                             text-decoration-line: line-through;
                                         }
-                                        .RealPrice{ margin-left: 10px;
+
+                                        .RealPrice {
+                                            margin-left: 10px;
                                             color: #ff7e00;
                                         }
                                     }
@@ -1159,6 +1185,7 @@ body {
                 padding-top: 30px;
                 padding-bottom: 10px;
                 position: relative;
+
                 .prev_arrow {
                     color: white;
                     border-radius: 50px;
@@ -1180,6 +1207,7 @@ body {
                         background-color: #ff7e00;
                     }
                 }
+
                 .next_arrow {
                     cursor: pointer;
                     color: white;
@@ -1196,13 +1224,16 @@ body {
                     right: 1px;
                     z-index: 5;
                     font-size: 22px;
+
                     &:hover {
                         background-color: #ff7e00;
                     }
                 }
+
                 ul {
                     padding: 0;
                     margin: 0;
+
                     li {
                         list-style: none;
                         display: flex;
@@ -1218,6 +1249,7 @@ body {
                                 object-fit: contain;
                                 width: 270px;
                             }
+
                             @media only screen and (max-width: 391px) {
                                 width: 44%;
                             }
@@ -1225,10 +1257,12 @@ body {
 
                         .textDeal {
                             font-family: 'Rubik', sans-serif;
+
                             .title {
                                 a {
                                     text-decoration: none;
                                     color: #333;
+
                                     h4 {
                                         font-size: 16px;
                                         transition: .4s;
@@ -1239,6 +1273,7 @@ body {
                                     }
                                 }
                             }
+
                             .textContent {
                                 padding-top: 10px;
                                 width: 425px;
@@ -1251,6 +1286,7 @@ body {
                             .price {
                                 padding-top: 10px;
                                 font-family: 'Rubik', sans-serif;
+
                                 ul {
                                     display: flex;
                                     padding: 0;
@@ -1298,14 +1334,16 @@ body {
                                 }
                             }
                         }
+
                         @media only screen and (max-width: 391px) {
-                        .textDeal {
-                            display: flex;
-                            justify-content: center;
-                            align-items: start;
-                            width: 44%;
-                            flex-direction: column;
-                            font-family: 'Rubik', sans-serif;
+                            .textDeal {
+                                display: flex;
+                                justify-content: center;
+                                align-items: start;
+                                width: 44%;
+                                flex-direction: column;
+                                font-family: 'Rubik', sans-serif;
+                            }
                         }
                     }
                 }
@@ -1412,6 +1450,7 @@ body {
 
                             .text {
                                 font-family: 'Rubik', sans-serif;
+
                                 &:hover .addToCard {
                                     display: block;
                                 }
@@ -1439,12 +1478,14 @@ body {
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    .discountPrice{
+
+                                    .discountPrice {
                                         color: #999;
                                         font-size: 14px;
                                         text-decoration-line: line-through;
                                     }
-                                    .realPrice{
+
+                                    .realPrice {
                                         margin-left: 10px;
                                         font-size: 16px;
                                         color: #ff7e00;
@@ -1493,28 +1534,32 @@ body {
                     }
                 }
             }
-             @media only screen and (max-width: 821px) {
+
+            @media only screen and (max-width: 821px) {
 
                 .firstImage {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
+
                     img {
                         margin: 0 auto;
                     }
                 }
+
                 .secondImage {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding-top: 10px;
                     text-align: center;
+
                     img {
                         margin: 0 auto;
                     }
                 }
-             }
+            }
 
             .adverstingMainPageSecond {
                 padding-top: 40px;
@@ -1692,7 +1737,8 @@ body {
             }
         }
     }
-    .up{
+
+    .up {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1711,12 +1757,13 @@ body {
         text-align: center;
         transition: .4s;
         z-index: 300;
-        &:hover{
+
+        &:hover {
             background-color: #ff7e00;
         }
     }
 }
-}
+
 
 footer {
     background-color: #232f3f;
@@ -1724,38 +1771,44 @@ footer {
     .upper {
         padding: 45px;
 
-        .accordionFooter{
-            .accordion{
-                border: none !important;
-                .accordion-item{
+        .accordionFooter {
+            .accordion {
                 border: none !important;
 
-                    .accordion-header{
-                        button{
+                .accordion-item {
+                    border: none !important;
+
+                    .accordion-header {
+                        button {
                             border-color: #232f3f;
-                            background-color: #232f3f ;
+                            background-color: #232f3f;
                             color: white;
                             border: none;
-                            ::after{
+
+                            ::after {
                                 color: white !important;
                             }
                         }
                     }
                 }
-                .accordion-collapse{
-                         border: none !important;
 
-                    .accordion-body{
-                         border: none !important;
+                .accordion-collapse {
+                    border: none !important;
+
+                    .accordion-body {
+                        border: none !important;
 
                         border-color: #232f3f;
                         background-color: #232f3f;
-                        ul{
+
+                        ul {
                             padding: 0;
                             margin: 0;
-                            li{
+
+                            li {
                                 list-style: none;
-                                a{
+
+                                a {
                                     text-decoration: none;
                                     color: white;
                                 }
