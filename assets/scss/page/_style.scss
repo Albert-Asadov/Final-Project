@@ -1334,17 +1334,33 @@ body {
                                 }
                             }
                         }
-
-                        @media only screen and (max-width: 391px) {
-                            .textDeal {
-                                display: flex;
-                                justify-content: center;
-                                align-items: start;
-                                width: 44%;
-                                flex-direction: column;
-                                font-family: 'Rubik', sans-serif;
+                    }
+                    @media only screen and (max-width: 391px) {
+                        li {
+                            list-style: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            text-align: center;
+                            .textDeal{
+                                text-align: center;
+                                .title{
+                                    text-align: center;
+                                }
+                                .textContent{
+                                  margin: 0 auto;
+                                }
+                                .price{
+                                    ul{
+                                        margin: 0 auto;
+                                        width: 118px;
+                                        text-align: center;
+                                    }
+                                }
                             }
                         }
+    
                     }
                 }
             }

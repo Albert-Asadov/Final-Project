@@ -10863,13 +10863,27 @@ body {
   color: white;
 }
 @media only screen and (max-width: 391px) {
-  #main .rightSide .mainContent .deals ul li .textDeal {
+  #main .rightSide .mainContent .deals ul li {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: start;
-    width: 44%;
+    align-items: center;
     flex-direction: column;
-    font-family: "Rubik", sans-serif;
+    text-align: center;
+  }
+  #main .rightSide .mainContent .deals ul li .textDeal {
+    text-align: center;
+  }
+  #main .rightSide .mainContent .deals ul li .textDeal .title {
+    text-align: center;
+  }
+  #main .rightSide .mainContent .deals ul li .textDeal .textContent {
+    margin: 0 auto;
+  }
+  #main .rightSide .mainContent .deals ul li .textDeal .price ul {
+    margin: 0 auto;
+    width: 118px;
+    text-align: center;
   }
 }
 #main .rightSide .mainContent .productFirst,
